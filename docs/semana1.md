@@ -6,238 +6,11 @@ Revisión de Syllabus, revisión de proyectos potenciales e introducción a la i
 
 ## Syllabus
 
-Tarea 1 descargar el Syllabus, entregar físicamente firmado, subirlo a sus páginas y mandar el documento al seleccionado para integrar todos los syllabus a un solo documento.
+[Syllabus Firmado (PDF)](./recursos/archivos/syllabus_jpsotres.pdf)
 
-[Descargar el Syllabus (PDF)](./recursos/archivos/2026_Syllabus_Proyecto_Ingeniería_IV.pdf)
+<iframe src="../recursos/archivos/syllabus_jpsotres.pdf"></iframe>
 
-<iframe src="../recursos/archivos/2026_Syllabus_Proyecto_Ingeniería_IV.pdf" width="800" height="440"></iframe>
-
-
-
-## TRL Nivel de madurez tecnológica (Technology Readiness Level) 
-
-Puedes descargar el documento [aquí](https://docs.google.com/spreadsheets/d/1NYIhXmFSM3qvFPglLjnC4HzYIEPZL69n/edit?usp=sharing&ouid=118419766353546707509&rtpof=true&sd=true)
-
-
-
-
-<iframe src="https://docs.google.com/spreadsheets/d/1NYIhXmFSM3qvFPglLjnC4HzYIEPZL69n/edit?usp=sharing&ouid=118419766353546707509&rtpof=true&sd=true" frameborder="0" width="1500" height="700" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-  
-    
-
-
-# **¿Cómo usas la IA?** 
-  
-    
-
-
-# **¿La usas la IA para evitar pensar?**
-
-  
-    
-      
-
-## Prompting estructurado
-
-
-![El prompt perfecto](../recursos/imgs/prompt_perfecto.png ){ width=600 align=center }
-
-### Modos de prompt
-
-| Modo |	Qué significa | Ejemplo |
-| :--- | :---: | :---: |
-| Prompting | Usar IA para generar material base | "Dame 20 formas de resolver X" |
-| Remix | Tomar el resultado de la IA y transformarlo | "Ahora hazlo más raro / más simple / para un niño de 10 años" |
-| Crítica | Pedir a la IA que desafíe tus propias ideas | "¿Qué tiene de malo este concepto?" |
-
-### Ejercicio
-
-!!! tip "El Desintoxicador digital analógico"
-    Reto de la cena sagrada: *Diseña un dispositivo 100% analógico (sin pantallas, cables ni baterías) que impida físicamente que los comensales usen el teléfono celular durante una comida, convirtiendo la desconexión en un juego de mesa.*
-
-    Tienes 20 segundos para hacer un prompt para que la IA de tu preferencia te dé ideas.
-
-
-
-!!! warning "Los 3 que más impacto tienen son"
-
-    * El rol (orienta el tono y conocimiento que usará la IA)
-    * La tarea clara (un verbo de acción específico hace toda la diferencia)
-    * El formato de salida (la IA no adivina si quieres bullet points, tabla o código).
-
-El error más común es dar contexto vago y omitir restricciones. Decirle a la IA qué NO hacer es tan poderoso como decirle qué sí hacer.
-
-### El Rol
-
-Ejemplos de cómo definir el rol para análisis de negocios, de menos a más sofisticado:
-
-**Básico** — solo nombra la expertise:
-
-"Actúa como consultor de negocios especializado en startups."
-
-**Intermedio** — agrega metodología y audiencia:
-
-"Actúa como consultor senior de estrategia con experiencia en Blue Ocean y Lean Startup. Tu audiencia son emprendedores latinoamericanos sin formación financiera, así que evita jerga técnica y usa ejemplos concretos."
-
-**Avanzado** — rol + postura + restricciones de sesgo:
-
-"Actúa como analista de negocios escéptico que busca debilidades antes que fortalezas. Tu trabajo es cuestionar supuestos, no validar ideas. Sé directo, usa datos cuando sea posible, y si no tienes certeza, dilo explícitamente en lugar de inventar."
-
-El patrón que funciona mejor es: profesión + especialidad + metodología que usa + cómo se comporta + para quién habla. Cuanto más específico el rol, menos "genérica" se vuelve la respuesta.
-
-### El Contexto
-
-El contexto es la capa que más se subestima. La IA no tiene acceso a tu situación — todo lo que no escribas, lo inventa o lo promedia.
-
-Hay 5 dimensiones de contexto que realmente cambian la respuesta:
-
-1.**Quién eres tú.** No tu nombre, sino tu rol y nivel de expertise en el tema.
-
-"Soy emprendedor con 3 años de experiencia, conozco el BMC pero nunca he hecho análisis de patentes."
-
-2.**Para quién es el resultado.** La audiencia final cambia el tono, vocabulario y profundidad.
-
-*"El output lo presentaré a un comité de funcionarios de gobierno, no a inversionistas."*
-
-3.**Qué ya existe o ya hiciste.** Evita que la IA repita lo que ya sabes o rehaga trabajo hecho.
-
-*"Ya tengo el análisis FODA. Lo que necesito es la estrategia, no el diagnóstico."*
-
-4.**Restricciones reales.** Tiempo, presupuesto, tecnología disponible, limitaciones del equipo.
-
-*"El equipo son 2 personas, presupuesto cero, necesito resultados en 2 semanas."*
-
-5.**El "para qué" final.** La intención detrás de la tarea. Cambia completamente lo que la IA prioriza.
-
-*"No quiero el análisis para publicar — es para decidir si pivoteo o sigo."*
-
-
-**Ejemplo con y sin contexto** — misma tarea, resultados muy distintos:
-
-❌ Sin contexto:
-
-"Dame una estrategia de marketing para mi app."
-
-✅ Con contexto:
-
-"Tengo una app de validación de ideas para emprendedores en México, etapa pre-revenue, usuario típico es 25-35 años autodidacta. No tengo presupuesto para ads. Necesito una estrategia de adquisición orgánica para los primeros 500 usuarios. Ya probé posts en LinkedIn sin resultado."
-
-**La regla práctica:** si al leer tu prompt alguien que no te conoce pudiera dar una respuesta genérica, falta contexto. El contexto perfecto hace que solo haya una respuesta correcta posible.
-
-
-
-### La Tarea
-
-La tarea es el núcleo del prompt. Todo lo demás la sirve. Si la tarea es vaga, el contexto y el rol no salvan la respuesta.
-
-**La fórmula base:**
-
-Verbo de acción + Objeto específico + Alcance o condición
-
-Verbos que funcionan vs. verbos trampa:
-
-| ❌ Vago |	✅ Específico |
-| :--- | :---: |
-| Ayúdame con…	| Redacta / Analiza / Compara |
-| Dime algo sobre… |	Resume en 3 puntos clave |
-| Explícame… | 	Extrae / Clasifica / Genera |
-| Hazme un análisis |	Identifica los 5 riesgos principales |
-| Dame ideas |	Propón 3 nombres con su justificación |
-
-**El mismo objetivo, 3 niveles de claridad:**
-
-❌ Malo:
-
-"Ayúdame con mi producto."
-
-⚠️ Regular:
-
-"Analiza mi producto de vigilancia tecnológica."
-
-✅ Bueno:
-
-"Identifica los 3 principales diferenciadores competitivos de una app de vigilancia tecnológica para PYMES latinoamericanas, comparados con herramientas como Derwent y Espacenet, en un párrafo por diferenciador."
-
-**3 técnicas avanzadas:**
-
-**Ancla el resultado esperado** — describe el output, no el proceso:
-
-"El resultado debe ser una tabla de decisión, no un texto explicativo."
-
-**Usa restricciones numéricas** — acotan sin limitar creatividad:
-
-"Exactamente 3 opciones. Ni más, ni menos."
-
-**Separa tareas si hay más de una** — una tarea por prompt cuando sea posible, o enuméralas si van juntas:
-
-"Haz dos cosas: ① resume el problema en una oración, ② propón una solución accionable esta semana."
-
-**Ejemplo para el taller de innovación:**
-
-*"Genera 4 actividades de calentamiento creativo para un taller de IA de 90 minutos dirigido a emprendedores sin conocimiento técnico. Cada actividad debe durar máximo 10 minutos, requerir cero tecnología, y conectar con el concepto de prompt engineering que verán después."*
-
-**Verbo claro → objeto concreto → alcance definido → condiciones reales.**
-
-!!! tip "TIP"
-    Iteración Dialéctica : En el contexto creativo, el prompt no debe verse como un "pedido de restaurante" (donde lanzas el pedido y esperas el plato), sino como una conversación iterativa con un colaborador. 
-
-    Layered Prompting: (Prompt por capas): No metas toda la información en un solo bloque gigante. La realidad de la creatividad es que el mejor resultado surge de ir refinando la visión. 
-
-    Evita la alucinación y el bloqueo: Si le pides a la IA que cree una campaña, un logo y un guión en un solo mensaje, perderá calidad en cada elemento.
-
-    Aumenta la "co-autoría": En lugar de esperar un resultado final, el usuario aprende a guiar la IA para que aprenda su estilo personal.
-
-
-!!! danger "Restricciones"
-
-    Concepto Rápido: Por Qué las Restricciones Impulsan la Creatividad
- 
-    La IA rinde mejor cuando se le dan restricciones. Sin restricciones, produce el promedio de todo lo que ha visto. Con restricciones, se vuelve interesante.
-
-    Prompt vago        → Resultado promedio
-
-    Prompt específico  → Resultado interesante
-
-    Prompt restringido → Resultado inesperado
-
-
-## *“Tight boundaries force the brain to get clever. Because the "sandbox" is tiny, the mind is pushed to innovate rather than relying on endless, unstructured possibilities.”*
-
-Patricia Stokes
-Creativity from Constraints
-
-
-## Business Blue Print
-
-El **IDEO Business Blueprint** (enseñado a través de IDEO U) es un lienzo de una página que traza un modelo de negocio centrado en el ser humano.  Ayuda a los innovadores a probar y construir estrategias viables alineando las necesidades de los clientes, las fuentes de ingresos y las operaciones antes de lanzar. 
-
-**Componentes Clave**
-
-* **Clientes Objetivo:** Las personas o segmentos específicos a los que tu producto o servicio pretende servir. 
-* **Propuesta de Valor:** El problema único que resuelves y el valor central que ofreces a esos usuarios. 
-* **Oferta:** El producto, servicio o experiencia real que llevas al mercado. 
-* **Modelo de Ingresos:** Cómo tu negocio generará dinero y capturará valor financiero. 
-* **Estructura de Costos:** Los gastos clave y los costos operativos necesarios para ejecutar el modelo. 
-* **Canales y Socios:** Cómo llegas a tus clientes y los socios clave que ayudan a entregar la oferta. 
-
-**Las Tres Lentes del Diseño.** El plan se basa en equilibrar tres criterios fundamentales para la innovación: 
-
-* **Deseabilidad:** ¿La gente lo necesita o lo quiere? 
-* **Viabilidad:** ¿Puedes realmente construirlo y entregarlo? 
-* **Factibilidad:** ¿Tiene sentido financiero como un negocio sostenible?
-
-
-<iframe src="https://docs.google.com/presentation/d/1jeJDRBKeM7dOQuQLbjAwtsL4RQ0r0toh/edit?usp=sharing&ouid=118419766353546707509&rtpof=true&sd=true" frameborder="0" width="1500" height="700" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-
-Puedes abrir [La presentación aquí](https://docs.google.com/presentation/d/1jeJDRBKeM7dOQuQLbjAwtsL4RQ0r0toh/edit?usp=sharing&ouid=118419766353546707509&rtpof=true&sd=true)
-
-
-
-## Creatividad asistida: 	Generación de Ideas a Velocidad
-
-### SCAMPER
+### Método SCAMPER
 
 El método **SCAMPER** es una técnica de creatividad e innovación. Sirve para generar ideas nuevas o mejorar productos, servicios y procesos que ya existen. Funciona como una lista de preguntas basadas en siete acciones
 
@@ -252,48 +25,116 @@ El método **SCAMPER** es una técnica de creatividad e innovación. Sirve para 
 | E | Eliminar | ¿Qué puedo quitar y que aún tenga valor? ¿Como puedo sustituir un componente crítico y sustituirlo con“algo” del contexto? |
 | R | Revertir / Reorganizar | ¿Y si invierto el modelo por completo? |
 
-### Ejemplo práctico por equipos de 2
+### Ejercicio método SCAMPER
 
-**1 por parejas pidan a su IA que les de 3 números aleatorios entre 1 y 6**
+**Primero, le pedi a la IA que me diera tres números aleatorios del 1 al 6, para posteriormente elegir tres variables obligatorias para diseñar un proyecto, las cuales fueron:**
 
-<iframe src="https://docs.google.com/presentation/d/1ZgtCttUP-VrvMHlSQfRPNeacnGtFm5xyKU607va2-Xc/edit?usp=sharing" frameborder="0" width="1500" height="700" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+1. EL QUÉ (Formato/Entregable): Un Kit Tangible o Contenedor de Recursos (Caja de herramientas, empaque inteligente, sistema de distribución física).
 
-Puedes abrir [el ejercicio SCAMPER aquí](https://docs.google.com/presentation/d/1ZgtCttUP-VrvMHlSQfRPNeacnGtFm5xyKU607va2-Xc/edit?usp=sharing)
+2. EL CÓMO (Restricción/Enfoque): Automatizado con IA / Digital (El núcleo de la solución debe operar de forma digital o automática).
 
+3. EL PARA QUIÉN (Usuario/Contexto): Transeúntes y Movilidad Urbana (Usuarios del transporte público, peatones en zonas conflictivas o ciclistas).
 
+**Despues,le di a Gemini el siguiente prompt:**
 
+"Antes de comenzar a idear soluciones específicas, necesito que me ayudes a enmarcar y entender el problema profundamente. Haz lo siguiente de forma concisa:
 
+1. CONTEXTO Y DOLOR: Define brevemente cuál es el principal punto de dolor (pain point) de este Usuario específico cuando se enfrenta a este Formato bajo esa Restricción técnica.
 
-## Propuesta de Proyectos
+2. LA PARADOJA: Si existe una contradicción o incompatibilidad aparente entre las tres variables (por ejemplo, digital vs. brecha digital, o cero presupuesto vs. infraestructura), explica brevemente cómo podemos transformarla en una oportunidad de diseño inteligente (tecnología invisible, interfaces alternativas, etc.).
 
-### Nuevas tecnologías en el IDIT
+3. LAS 3 PREGUNTAS HMW: Genera 3 variantes del formato estricto "¿Cómo podríamos...?" (How Might We) que unan estas tres variables. Cada opción debe enfocarse en un ángulo diferente (eficiencia, impacto social o experiencia emocional).
 
-[**Antena Lora**](https://www.vencoel.com/que-es-lora-como-funciona-y-caracteristicas-principales/)
+Termina tu respuesta preguntándome cuál de las 3 opciones de "¿Cómo podríamos...?" quiero elegir para pasar a la fase de ideación SCAMPER."
 
-[**Antena RTK**](https://www.helixnorth.com/blog/sistema-georreferenciado-de-datos-rtk-y-ppk-cul-es-mejor)
+**Despues de que la IA me haya dado las 3 preguntas HWM, escogi la opción que me parecio mas interesante, en este caso fue:**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bCoIXgqlmTI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+"¿Cómo podríamos diseñar un contenedor físico de acceso instantáneo gestionado por IA que entregue a los ciclistas y peatones los recursos exactos de emergencia o mantenimiento sin detener su trayecto por más de 10 segundos?"
 
-[Proyecto Centipede en Francia](https://www.centipede-rtk.org/)
+**Despues de escoger la pregunta HWM, use el siguiente prompt para que la IA aplique la metodología SCAMPER:**
 
-!!! tip "Sugerencia:"
-    - [¿Bastón para ciegos autoguiado? / ¿Comandos de  voz por teléfono? RTK](https://www.linkedin.com/posts/explore-m%C3%A9dia_cette-technologie-redonne-de-lautonomie-activity-7333432446425710593-vzFB?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAIEv6UBxHmoMGuYKeqpGdOKqwDPU1dzmVg)
-    - [Tractor eléctrico autoguiado RTK](https://www.instagram.com/renewables247/) o bien otros productos
-    - [Eliminador de hierba inteligente RTK](https://bumerania.com/soluciones-roboticas/robot-agricola-inteligente/)
-    - [Geofencing para ganado RTK](https://www.halterhq.com/) [Otro enlace](https://www.instagram.com/halterhq/)
-    - [Rep Rap Micron](https://www-hackster-io.cdn.ampproject.org/c/s/www.hackster.io/news/can-reprap-revolutionize-3d-printing-again-with-the-new-micron-design-18c4775e4d1a.amp), [All3DP](https://all3dp.com/es/4/nueva-impresora-3d-diy-de-precision-a-micronivel-de-un-pionero-de-reprap-pone-la-tecnologia-al-alcance-de-su-escritorio/) [Git](https://github.com/VikOlliver/RepRapMicron), [Vik](https://3dprintingindustry.com/news/interview-vik-olliver-first-reprap-volunteer-didnt-just-build-3d-printer-133892/)
-    - Detección temprana de [movimiento de tierras](https://www.instagram.com/reel/DM-1UYGIEre/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==), [Deslaves CDMX](https://www.reforma.com/ubican-462-puntos-con-riesgo-de-deslave-o-inundacion-en-cdmx/ar2875886), [Atlas de riesgo](https://www.atlas.cdmx.gob.mx/analisisn3/), [Congreso pide atención](https://www.congresocdmx.gob.mx/comsoc-pide-congreso-acciones-atender-deslaves-cuajimalpa-5557-1.html)
-    - Control Avícola Inteligente
+Como nuestro consultor de innovación, ahora vamos a aplicar la metodología SCAMPER para generar ideas altamente disruptivas para esta pregunta específica, teniendo muy presentes las restricciones de nuestros dados originales.
 
+"Para no inundarme de información genérica, haz lo siguiente:
 
+1. EL FILTRO DE AUDACIA: Genera exactamente 2 ideas innovadoras y viables para cada una de las siguientes letras de SCAMPER que son las más críticas para nuestro reto:
 
+   - S (Sustituir): ¿Qué elemento tradicional, proceso o material del problema podemos sustituir para romper las reglas?
 
+   - C (Combinar): ¿Con qué otro servicio, industria, hábito o tendencia actual podemos combinar nuestra solución para crear algo único?
 
+   - M (Magnificar/Modificar): ¿Qué pasaría si exageramos al extremo el beneficio principal o modificamos radicalmente el formato?
 
-!!! note "Tarea"
-    - Entregar el syllabus firmado para la semana y colocar el syllabus firmado en la página de semana 1
-    - Mandar al compañero seleccionado el pdf de su syllabus firmado para que lo recolecte en un solo archivo
-    - Hacer sus páginas personales en github. Para esto pueden utilizar la plantilla y las instrucciones [en este repositorio](https://github.com/Gulden8ag/iberoP_Web)
-    - Escribir la dirección de sus páginas en [Esta Lista](https://docs.google.com/spreadsheets/d/1K19NMJWUl0Xz4gGL0zMCp6Fc3yzoC8mmfAGNCUIXeGc/edit?usp=sharing) 
-    - En equipo de 2 elegir el área de su interés para desarrollar su proyecto final. Si ya tienen proyecto, comenzar a ampliar las posibilidades del mismo
-    - Hacer una presentación breve de su ejercicio SCAMPER
+   - E (Eliminar): ¿Qué elemento que todos dan por obligatorio en este tipo de soluciones podemos eliminar por completo para simplificar la vida del usuario?
+
+2. FORMATO DE SALIDA: Presenta cada idea con:
+
+   - Un título llamativo (máximo 4 palabras).
+
+   - Una descripción de 2 frases (qué es y cómo funciona).
+
+   - "El factor Wow": Qué la hace atractiva tanto para un emprendedor/freelancer (agilidad/negocio) como para un funcionario público (impacto social/comunidad).
+
+Comienza de inmediato."
+
+**Prompt Remix**
+**De las 8 ideas que me dio, elegi las 2 ideas que mas me llamaron la atencion: Lockers por Micro-Drones Anclados y Pit-Stop en Rutas Logísticas; para hacer un "remix" del prompt.**
+
+"De las 8 ideas que me diste, las que más nos llaman la atención son:  Lockers por Micro-Drones Anclados y Pit-Stop en Rutas Logísticas.
+
+Actúa como nuestro facilitador de diseño. Haz lo siguiente de forma súper concisa:
+
+EL REMIX: Combina esas dos ideas en un concepto único de producto o servicio. Descríbelo en 3 oraciones estrictas: qué es, para quién es y qué lo hace inusual.
+
+EL FILTRO DNV (Deseo, Novedad, Viabilidad): Evalúa este nuevo concepto dándole una calificación del 1 al 5 a cada criterio y justificando brevemente por qué:
+
+DESEO: ¿Por qué un usuario real o una institución querría adoptar esto con urgencia?
+
+NOVEDAD: ¿Qué la aleja radicalmente de las soluciones aburridas que ya existen?
+
+VIABILIDAD: ¿Cuál sería el primer paso (un prototipo de 2 horas) para empezar a hacerla real hoy mismo?
+
+FORMATO DE SALIDA: Presenta la idea con:
+
+Un título llamativo (máximo 4 palabras)
+
+Una descripción de 2 frases (qué es y cómo funciona).
+
+"El factor Wow": Qué la hace atractiva tanto para un emprendedor/freelancer (agilidad/negocio) como para un funcionario (impacto social/comunidad)."
+
+**Resultado**
+
+Título Llamativo
+Red Nodriza de Auxilio
+
+Formato de Salida
+Descripción (2 frases):
+
+Es un sistema de asistencia urbana bajo demanda que utiliza mochilas inteligentes montadas en repartidores de delivery como plataformas móviles de despacho de micro-drones con kits de reparación rápida. Cuando un ciclista o peatón sufre un percance, el repartidor más cercano actúa como nodo móvil y el dron despega de su espalda para entregar la herramienta exacta en segundos sin interrumpir el trayecto de ninguno.
+
+"El factor Wow":
+
+Para el emprendedor/freelancer, convierte el tiempo en ruta de los repartidores en una nueva fuente de ingresos pasivos por comisión de despacho; para el funcionario público, crea una red de rescate y seguridad vial hiper-rápida sin invertir un solo peso en infraestructura física en banquetas.
+
+El Remix (3 Oraciones Estrictas)
+Qué es: Es una infraestructura híbrida de micro-logística que combina la capilaridad de las flotas de delivery existentes con mini-drones de entrega ultracorta alojados en mochilas automatizadas.
+
+Para quién es: Está diseñado para ciclistas, usuarios de micromovilidad y transeúntes que enfrentan averías mecánicas o urgencias menores en zonas urbanas de alto tránsito.
+
+Qué lo hace inusual: Descentraliza el punto de lanzamiento eliminando los puertos fijos y utiliza a la comunidad de repartidores como una colmena móvil en constante movimiento coordinada por algoritmos predictivos.
+
+Filtro DNV (Deseo, Novedad, Viabilidad)
+DESEO (4.5 / 5):
+
+Justificación: Para el usuario, reduce el tiempo de espera de una grúa o auxilio tradicional de 40 minutos a menos de 2 minutos exactos en el punto de falla; para las apps de delivery y municipios, añade valor cívico y reputación a las flotas urbanas.
+
+NOVEDAD (5.0 / 5):
+
+Justificación: Rompe el paradigma de los casilleros estáticos y los drones de largo alcance dependientes de helipuertos, introduciendo el concepto de micro-lanzamiento en movimiento (Edge Drone Logistics) integrado al ecosistema laboral cotidiano.
+
+VIABILIDAD (3.5 / 5):
+
+Justificación: Aunque la integración con drones autónomos requiere certificaciones aeronáuticas urbanas, el modelo operativo y algorítmico es inmediatamente testeable con tecnología comercial existente.
+
+Prototipo de 2 horas: Un canal de Telegram/WhatsApp conectado a 3 repartidores locales en un circuito delimitado (ej. una ciclovía principal) equipados con un kit físico estándar en la mochila, activados manualmente mediante geolocalización compartida por un usuario "varado" para cronometrar tiempos de respuesta y fricción operativa.
+
