@@ -1,4 +1,4 @@
-site_name: " "
+site_name: "Proyecto de Ingeniería 4"
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -37,4 +37,8 @@ theme:
 extra_css:
   - https://use.fontawesome.com/releases/v6.5.2/css/all.css
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css
-
+# Configuración del menú de navegación
+nav:
+  - Inicio: index.md
+  - Semana 1: semana1.md
+  - Semana 2: semana2.md
