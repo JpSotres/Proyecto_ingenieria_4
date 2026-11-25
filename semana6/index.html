@@ -1,0 +1,2185 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../semana5/">
+      
+      
+        <link rel="next" href="../semana7/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Semana 6 - Proyecto de Ingeniería 4</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#generacion-y-seleccion-de-concepto-de-diseno" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Proyecto de Ingeniería 4" class="md-header__button md-logo" aria-label="Proyecto de Ingeniería 4" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m-2 12c-.25 0-.46-.18-.5-.42l-.37-2.65c-.63-.25-1.17-.59-1.69-.99l-2.49 1.01c-.22.08-.49 0-.61-.22l-2-3.46a.493.493 0 0 1 .12-.64l2.11-1.66L4.5 12l.07-1-2.11-1.63a.493.493 0 0 1-.12-.64l2-3.46c.12-.22.39-.31.61-.22l2.49 1c.52-.39 1.06-.73 1.69-.98l.37-2.65c.04-.24.25-.42.5-.42h4c.25 0 .46.18.5.42l.37 2.65c.63.25 1.17.59 1.69.98l2.49-1c.22-.09.49 0 .61.22l2 3.46c.13.22.07.49-.12.64L19.43 11l.07 1-.07 1 2.11 1.63c.19.15.25.42.12.64l-2 3.46c-.12.22-.39.31-.61.22l-2.49-1c-.52.39-1.06.73-1.69.98l-.37 2.65c-.04.24-.25.42-.5.42zm1.25-18-.37 2.61c-1.2.25-2.26.89-3.03 1.78L5.44 7.35l-.75 1.3L6.8 10.2a5.55 5.55 0 0 0 0 3.6l-2.12 1.56.75 1.3 2.43-1.04c.77.88 1.82 1.52 3.01 1.76l.37 2.62h1.52l.37-2.61c1.19-.25 2.24-.89 3.01-1.77l2.43 1.04.75-1.3-2.12-1.55c.4-1.17.4-2.44 0-3.61l2.11-1.55-.75-1.3-2.41 1.04a5.42 5.42 0 0 0-3.03-1.77L12.75 4z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Proyecto de Ingeniería 4
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Semana 6
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="light-blue"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../About/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About me
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../semana1/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semana 1
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../semana2/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semana 2
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../semana3/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semana 3
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../semana4/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semana 4
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../semana5/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semana 5
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semana 6
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../semana7/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semana 7
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Proyecto de Ingeniería 4" class="md-nav__button md-logo" aria-label="Proyecto de Ingeniería 4" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m-2 12c-.25 0-.46-.18-.5-.42l-.37-2.65c-.63-.25-1.17-.59-1.69-.99l-2.49 1.01c-.22.08-.49 0-.61-.22l-2-3.46a.493.493 0 0 1 .12-.64l2.11-1.66L4.5 12l.07-1-2.11-1.63a.493.493 0 0 1-.12-.64l2-3.46c.12-.22.39-.31.61-.22l2.49 1c.52-.39 1.06-.73 1.69-.98l.37-2.65c.04-.24.25-.42.5-.42h4c.25 0 .46.18.5.42l.37 2.65c.63.25 1.17.59 1.69.98l2.49-1c.22-.09.49 0 .61.22l2 3.46c.13.22.07.49-.12.64L19.43 11l.07 1-.07 1 2.11 1.63c.19.15.25.42.12.64l-2 3.46c-.12.22-.39.31-.61.22l-2.49-1c-.52.39-1.06.73-1.69.98l-.37 2.65c-.04.24-.25.42-.5.42zm1.25-18-.37 2.61c-1.2.25-2.26.89-3.03 1.78L5.44 7.35l-.75 1.3L6.8 10.2a5.55 5.55 0 0 0 0 3.6l-2.12 1.56.75 1.3 2.43-1.04c.77.88 1.82 1.52 3.01 1.76l.37 2.62h1.52l.37-2.61c1.19-.25 2.24-.89 3.01-1.77l2.43 1.04.75-1.3-2.12-1.55c.4-1.17.4-2.44 0-3.61l2.11-1.55-.75-1.3-2.41 1.04a5.42 5.42 0 0 0-3.03-1.77L12.75 4z"/></svg>
+
+    </a>
+    Proyecto de Ingeniería 4
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../About/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About me
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semana1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semana2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semana3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semana4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semana5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 6
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Introducción
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-generacion-de-alternativas-mediante-una-tabla-morfologica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Generación de alternativas mediante una tabla morfológica
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Generación de alternativas mediante una tabla morfológica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-tabla-morfologica-de-nervik" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Tabla morfológica de Nervik
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-analisis-de-las-alternativas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Análisis de las alternativas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-analogias-tecnologicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Analogías tecnológicas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Analogías tecnológicas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-referencias-estudiadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Referencias estudiadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-aplicacion-al-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Aplicación al diseño
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-desarrollo-de-los-tres-conceptos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Desarrollo de los tres conceptos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Desarrollo de los tres conceptos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-concepto-1-cuna-guardian" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Concepto 1 — Cuña Guardián
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-concepto-2-caja-discreta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Concepto 2 — Caja Discreta
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-concepto-3-capsula-lisa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Concepto 3 — Cápsula Lisa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-comparacion-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Comparación general
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-seleccion-mediante-matriz-de-pugh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Selección mediante matriz de Pugh
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Selección mediante matriz de Pugh">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-matriz-de-pugh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Matriz de Pugh
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Resultados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-decision-del-equipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Decisión del equipo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-boceto-tecnico-del-concepto-seleccionado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Boceto técnico del concepto seleccionado
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Boceto técnico del concepto seleccionado">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-boceto-de-cuna-guardian" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Boceto de Cuña Guardián
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-dimensiones-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Dimensiones principales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-distribucion-de-componentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Distribución de componentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-materiales-y-ensamble" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Materiales y ensamble
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-diseno-conceptual-de-la-aplicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Diseño conceptual de la aplicación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Diseño conceptual de la aplicación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-pantalla-de-funcionamiento-normal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Pantalla de funcionamiento normal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-pantalla-de-alerta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Pantalla de alerta
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-informacion-excluida-de-la-interfaz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Información excluida de la interfaz
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-proceso-de-instalacion-propuesto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Proceso de instalación propuesto
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Proceso de instalación propuesto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-activacion-del-dispositivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 Activación del dispositivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-instalacion-fisica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 Instalación física
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-autoprueba" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 Autoprueba
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-justificacion-del-concepto-seleccionado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Justificación del concepto seleccionado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-resultados-de-la-semana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Resultados de la semana
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusión
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semana7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Introducción
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-generacion-de-alternativas-mediante-una-tabla-morfologica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Generación de alternativas mediante una tabla morfológica
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Generación de alternativas mediante una tabla morfológica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-tabla-morfologica-de-nervik" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Tabla morfológica de Nervik
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-analisis-de-las-alternativas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Análisis de las alternativas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-analogias-tecnologicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Analogías tecnológicas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Analogías tecnológicas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-referencias-estudiadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Referencias estudiadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-aplicacion-al-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Aplicación al diseño
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-desarrollo-de-los-tres-conceptos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Desarrollo de los tres conceptos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Desarrollo de los tres conceptos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-concepto-1-cuna-guardian" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Concepto 1 — Cuña Guardián
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-concepto-2-caja-discreta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Concepto 2 — Caja Discreta
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-concepto-3-capsula-lisa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Concepto 3 — Cápsula Lisa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-comparacion-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Comparación general
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-seleccion-mediante-matriz-de-pugh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Selección mediante matriz de Pugh
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Selección mediante matriz de Pugh">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-matriz-de-pugh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Matriz de Pugh
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Resultados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-decision-del-equipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Decisión del equipo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-boceto-tecnico-del-concepto-seleccionado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Boceto técnico del concepto seleccionado
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Boceto técnico del concepto seleccionado">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-boceto-de-cuna-guardian" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Boceto de Cuña Guardián
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-dimensiones-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Dimensiones principales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-distribucion-de-componentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Distribución de componentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-materiales-y-ensamble" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Materiales y ensamble
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-diseno-conceptual-de-la-aplicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Diseño conceptual de la aplicación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Diseño conceptual de la aplicación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-pantalla-de-funcionamiento-normal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Pantalla de funcionamiento normal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-pantalla-de-alerta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Pantalla de alerta
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-informacion-excluida-de-la-interfaz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Información excluida de la interfaz
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-proceso-de-instalacion-propuesto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Proceso de instalación propuesto
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Proceso de instalación propuesto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-activacion-del-dispositivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 Activación del dispositivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-instalacion-fisica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 Instalación física
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-autoprueba" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 Autoprueba
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-justificacion-del-concepto-seleccionado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Justificación del concepto seleccionado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-resultados-de-la-semana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Resultados de la semana
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusión
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="generacion-y-seleccion-de-concepto-de-diseno">Generación y selección de concepto de diseño</h1>
+<div class="admonition info">
+<p class="admonition-title">Objetivo de la semana</p>
+<p>Desarrollar diferentes alternativas de diseño para Nervik, compararlas mediante criterios de deseabilidad y factibilidad, y seleccionar un concepto que cumpla con los requisitos técnicos establecidos en el PDS de la Semana 5.</p>
+</div>
+<hr />
+<h2 id="1-introduccion">1. Introducción</h2>
+<p>Durante la Semana 5 definimos las especificaciones técnicas y la arquitectura del sistema de Nervik.</p>
+<p>En esta semana el trabajo se enfocó en transformar esos requisitos en propuestas concretas de diseño, considerando tanto el dispositivo físico como la experiencia del usuario y la aplicación.</p>
+<p>El objetivo fue evitar seleccionar una carcasa únicamente por su apariencia. Para ello, se generaron diferentes conceptos y se compararon mediante una metodología estructurada.</p>
+<p>El proceso incluyó el uso de herramientas de inteligencia artificial como apoyo para generar alternativas, investigar soluciones de otros sectores y evaluar los conceptos.</p>
+<p>Las principales actividades fueron:</p>
+<ol>
+<li>Construcción de una tabla morfológica.</li>
+<li>Búsqueda de analogías tecnológicas.</li>
+<li>Desarrollo de tres conceptos de diseño.</li>
+<li>Evaluación mediante una matriz de Pugh.</li>
+<li>Definición del boceto técnico.</li>
+<li>Diseño conceptual de la interfaz de usuario.</li>
+<li>Justificación del concepto seleccionado.</li>
+</ol>
+<hr />
+<h2 id="2-generacion-de-alternativas-mediante-una-tabla-morfologica">2. Generación de alternativas mediante una tabla morfológica</h2>
+<p>La tabla morfológica es una herramienta que permite explorar distintas soluciones para los elementos principales de un producto.</p>
+<p>En lugar de desarrollar una sola propuesta desde el inicio, se dividió el diseño en siete parámetros y se plantearon tres alternativas para cada uno.</p>
+<p>Se utilizó <strong>Claude</strong> como herramienta de apoyo para generar opciones que pudieran fabricarse con los recursos disponibles en un entorno universitario, como impresión 3D y componentes electrónicos comerciales.</p>
+<p>El equipo complementó las propuestas con algunas variantes propias, especialmente relacionadas con la forma de la carcasa.</p>
+<h3 id="21-tabla-morfologica-de-nervik">2.1 Tabla morfológica de Nervik</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parámetro</th>
+<th style="text-align: left;">Alternativa A</th>
+<th style="text-align: left;">Alternativa B</th>
+<th style="text-align: left;">Alternativa C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Forma de carcasa</td>
+<td style="text-align: left;">Caja rectangular compacta</td>
+<td style="text-align: left;">Cuña biselada</td>
+<td style="text-align: left;">Cápsula redondeada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Instalación</td>
+<td style="text-align: left;">Cinta adhesiva automotriz</td>
+<td style="text-align: left;">Soporte con cinchos desmontables</td>
+<td style="text-align: left;">Base atornillada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Indicadores</td>
+<td style="text-align: left;">Un LED RGB</td>
+<td style="text-align: left;">Tres LED independientes</td>
+<td style="text-align: left;">Pantalla OLED</td>
+</tr>
+<tr>
+<td style="text-align: left;">Material</td>
+<td style="text-align: left;">PLA/PETG mate</td>
+<td style="text-align: left;">PETG liso</td>
+<td style="text-align: left;">ABS/ASA mate</td>
+</tr>
+<tr>
+<td style="text-align: left;">Interfaz física</td>
+<td style="text-align: left;">Un botón multifunción</td>
+<td style="text-align: left;">Dos botones: reinicio y prueba</td>
+<td style="text-align: left;">Botón de servicio protegido</td>
+</tr>
+<tr>
+<td style="text-align: left;">Alimentación</td>
+<td style="text-align: left;">Solamente alimentación vehicular</td>
+<td style="text-align: left;">12/24 V con conversión DC-DC</td>
+<td style="text-align: left;">Alimentación vehicular y batería LiFePO4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Protección y ubicación</td>
+<td style="text-align: left;">Oculto bajo el tablero</td>
+<td style="text-align: left;">Compartimento protegido con soporte</td>
+<td style="text-align: left;">Sellos IP54 en la interfaz</td>
+</tr>
+</tbody>
+</table>
+<h3 id="22-analisis-de-las-alternativas">2.2 Análisis de las alternativas</h3>
+<p>La tabla permitió identificar diferentes compromisos entre facilidad de fabricación, protección, instalación y experiencia de uso.</p>
+<p>Por ejemplo, una caja rectangular es más sencilla de fabricar, pero una geometría en cuña puede ofrecer ventajas de integración y protección física.</p>
+<p>También se compararon diferentes formas de mostrar el estado del dispositivo.</p>
+<p>Se consideró que tres LED independientes permitirían identificar claramente funciones distintas:</p>
+<ul>
+<li>Estado de alimentación.</li>
+<li>Estado de comunicación.</li>
+<li>Estado de alerta.</li>
+</ul>
+<p>La tabla morfológica sirvió como base para combinar alternativas y generar los tres conceptos que se evaluarían posteriormente.</p>
+<hr />
+<h2 id="3-analogias-tecnologicas">3. Analogías tecnológicas</h2>
+<p>Para ampliar las alternativas se investigaron soluciones utilizadas en otros sectores que enfrentan problemas similares de señalización, protección o conservación de información.</p>
+<p>Se utilizó nuevamente Claude como apoyo para identificar principios de diseño que pudieran adaptarse a Nervik.</p>
+<h3 id="31-referencias-estudiadas">3.1 Referencias estudiadas</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Referencia</th>
+<th style="text-align: left;">Sector</th>
+<th style="text-align: left;">Principio aplicado a Nervik</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Panel de advertencias de un avión</td>
+<td style="text-align: left;">Aeronáutica</td>
+<td style="text-align: left;">Utilizar indicadores separados con significados claros</td>
+</tr>
+<tr>
+<td style="text-align: left;">Detector de humo</td>
+<td style="text-align: left;">Seguridad doméstica</td>
+<td style="text-align: left;">Incorporar una señal de funcionamiento y un botón de autoprueba</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cámara domo antivandalismo</td>
+<td style="text-align: left;">Seguridad urbana</td>
+<td style="text-align: left;">Evitar superficies que faciliten la manipulación</td>
+</tr>
+<tr>
+<td style="text-align: left;">Caja negra de vuelo</td>
+<td style="text-align: left;">Aeronáutica</td>
+<td style="text-align: left;">Priorizar la conservación de información durante un incidente</td>
+</tr>
+</tbody>
+</table>
+<h3 id="32-aplicacion-al-diseno">3.2 Aplicación al diseño</h3>
+<p>Las analogías ayudaron a desarrollar soluciones que no estaban relacionadas únicamente con la estética de la carcasa.</p>
+<p>En particular, se propuso incorporar superficies redondeadas o biseladas que redujeran los puntos de agarre.</p>
+<p>También se reforzó la decisión de utilizar indicadores independientes, de manera que el estado del dispositivo pudiera reconocerse sin abrir la aplicación.</p>
+<p>A partir de estas referencias se añadió una variante de cuña con aristas redondeadas y chaflanes de 45°.</p>
+<hr />
+<h2 id="4-desarrollo-de-los-tres-conceptos">4. Desarrollo de los tres conceptos</h2>
+<p>Con las alternativas de la tabla morfológica se desarrollaron tres propuestas completas.</p>
+<p>Cada concepto consideró la forma del dispositivo, sus materiales, el sistema de instalación, la alimentación, los indicadores y su relación con la aplicación.</p>
+<h3 id="41-concepto-1-cuna-guardian">4.1 Concepto 1 — Cuña Guardián</h3>
+<p>La primera alternativa consiste en una carcasa con forma de cuña biselada a 30°.</p>
+<p>Sus principales características son:</p>
+<ul>
+<li>Carcasa fabricada en PETG liso.</li>
+<li>Montaje mediante un soporte y dos cinchos.</li>
+<li>Tres LED independientes.</li>
+<li>Alimentación vehicular con batería de respaldo LiFePO4.</li>
+<li>Diseño orientado a proteger el dispositivo y conservar información.</li>
+<li>Posibilidad de fabricación mediante impresión 3D.</li>
+</ul>
+<p>El concepto combina elementos de una caja negra con la señalización clara de un panel aeronáutico.</p>
+<h3 id="42-concepto-2-caja-discreta">4.2 Concepto 2 — Caja Discreta</h3>
+<p>La segunda alternativa utiliza una carcasa rectangular compacta.</p>
+<p>Sus características son:</p>
+<ul>
+<li>Fabricación en PLA o PETG.</li>
+<li>Instalación mediante cinta adhesiva.</li>
+<li>Un LED RGB como indicador.</li>
+<li>Alimentación exclusivamente vehicular.</li>
+<li>Geometría sencilla y menor complejidad de fabricación.</li>
+</ul>
+<p>Esta alternativa se utilizó como <strong>referencia o datum</strong> para la evaluación mediante la matriz de Pugh.</p>
+<h3 id="43-concepto-3-capsula-lisa">4.3 Concepto 3 — Cápsula Lisa</h3>
+<p>La tercera alternativa plantea una carcasa con superficies redondeadas y apariencia similar a una cápsula.</p>
+<p>Sus características principales son:</p>
+<ul>
+<li>Material ABS o ASA.</li>
+<li>Instalación mediante una base atornillada.</li>
+<li>Pantalla OLED.</li>
+<li>Alimentación vehicular con respaldo LiFePO4.</li>
+<li>Superficie exterior diseñada para dificultar la manipulación.</li>
+</ul>
+<p>Aunque presenta ventajas de protección y apariencia, también implica mayores dificultades de fabricación.</p>
+<h3 id="44-comparacion-general">4.4 Comparación general</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Característica</th>
+<th style="text-align: left;">Cuña Guardián</th>
+<th style="text-align: left;">Caja Discreta</th>
+<th style="text-align: left;">Cápsula Lisa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Forma</td>
+<td style="text-align: left;">Cuña biselada a 30°</td>
+<td style="text-align: left;">Caja rectangular</td>
+<td style="text-align: left;">Cápsula redondeada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Montaje</td>
+<td style="text-align: left;">Dos cinchos</td>
+<td style="text-align: left;">Cinta adhesiva</td>
+<td style="text-align: left;">Base atornillada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Indicadores</td>
+<td style="text-align: left;">Tres LED</td>
+<td style="text-align: left;">LED RGB</td>
+<td style="text-align: left;">Pantalla OLED</td>
+</tr>
+<tr>
+<td style="text-align: left;">Material</td>
+<td style="text-align: left;">PETG liso</td>
+<td style="text-align: left;">PLA/PETG</td>
+<td style="text-align: left;">ABS/ASA</td>
+</tr>
+<tr>
+<td style="text-align: left;">Energía</td>
+<td style="text-align: left;">Vehicular + LiFePO4</td>
+<td style="text-align: left;">Vehicular</td>
+<td style="text-align: left;">Vehicular + LiFePO4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fabricación</td>
+<td style="text-align: left;">Impresión con plano inclinado</td>
+<td style="text-align: left;">Más sencilla</td>
+<td style="text-align: left;">Requiere mayor control de impresión</td>
+</tr>
+<tr>
+<td style="text-align: left;">Analogía principal</td>
+<td style="text-align: left;">Caja negra y panel de avión</td>
+<td style="text-align: left;">Rastreador adhesivo</td>
+<td style="text-align: left;">Domo antivandalismo</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-seleccion-mediante-matriz-de-pugh">5. Selección mediante matriz de Pugh</h2>
+<p>Después de desarrollar los tres conceptos se utilizó una matriz de Pugh para seleccionar la alternativa más adecuada.</p>
+<p>Esta herramienta permite comparar diferentes propuestas a partir de criterios previamente definidos, evitando basar la decisión únicamente en preferencias personales.</p>
+<p>Para la comparación se utilizó como referencia el <strong>Concepto 2: Caja Discreta</strong>.</p>
+<p>Los criterios se dividieron en dos categorías:</p>
+<ul>
+<li><strong>Deseabilidad:</strong> características importantes para el usuario.</li>
+<li><strong>Factibilidad:</strong> facilidad de fabricar, ensamblar y desarrollar el producto.</li>
+</ul>
+<p>Se utilizaron nueve criterios ponderados. La deseabilidad representó el 45% del peso total.</p>
+<h3 id="51-matriz-de-pugh">5.1 Matriz de Pugh</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Criterio</th>
+<th style="text-align: center;">Peso</th>
+<th style="text-align: center;">Cuña Guardián</th>
+<th style="text-align: center;">Caja Discreta</th>
+<th style="text-align: center;">Cápsula Lisa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Instalación sin herramientas</td>
+<td style="text-align: center;">15%</td>
+<td style="text-align: center;">S</td>
+<td style="text-align: center;">Ref.</td>
+<td style="text-align: center;">−</td>
+</tr>
+<tr>
+<td style="text-align: left;">Estado legible sin aplicación</td>
+<td style="text-align: center;">12%</td>
+<td style="text-align: center;">+</td>
+<td style="text-align: center;">Ref.</td>
+<td style="text-align: center;">+</td>
+</tr>
+<tr>
+<td style="text-align: left;">Resistencia a manipulación</td>
+<td style="text-align: center;">13%</td>
+<td style="text-align: center;">+</td>
+<td style="text-align: center;">Ref.</td>
+<td style="text-align: center;">+</td>
+</tr>
+<tr>
+<td style="text-align: left;">Confianza del acabado</td>
+<td style="text-align: center;">5%</td>
+<td style="text-align: center;">S</td>
+<td style="text-align: center;">Ref.</td>
+<td style="text-align: center;">+</td>
+</tr>
+<tr>
+<td style="text-align: left;">Costo por unidad en lote de 10</td>
+<td style="text-align: center;">15%</td>
+<td style="text-align: center;">−</td>
+<td style="text-align: center;">Ref.</td>
+<td style="text-align: center;">−</td>
+</tr>
+<tr>
+<td style="text-align: left;">Complejidad de ensamble</td>
+<td style="text-align: center;">10%</td>
+<td style="text-align: center;">−</td>
+<td style="text-align: center;">Ref.</td>
+<td style="text-align: center;">−</td>
+</tr>
+<tr>
+<td style="text-align: left;">Compatibilidad con FDM y JLCPCB</td>
+<td style="text-align: center;">10%</td>
+<td style="text-align: center;">S</td>
+<td style="text-align: center;">Ref.</td>
+<td style="text-align: center;">−</td>
+</tr>
+<tr>
+<td style="text-align: left;">IP54 y temperatura de 60 °C</td>
+<td style="text-align: center;">10%</td>
+<td style="text-align: center;">+</td>
+<td style="text-align: center;">Ref.</td>
+<td style="text-align: center;">+</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tiempo de prototipado</td>
+<td style="text-align: center;">10%</td>
+<td style="text-align: center;">S</td>
+<td style="text-align: center;">Ref.</td>
+<td style="text-align: center;">−</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Puntuación ponderada</strong></td>
+<td style="text-align: center;"><strong>100%</strong></td>
+<td style="text-align: center;"><strong>+10</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>−20</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Interpretación de símbolos:</strong></p>
+<ul>
+<li><strong>+</strong>: mejor que el concepto de referencia.</li>
+<li><strong>S</strong>: desempeño similar al concepto de referencia.</li>
+<li><strong>−</strong>: peor que el concepto de referencia.</li>
+<li><strong>Ref.</strong>: concepto utilizado como referencia.</li>
+</ul>
+<h3 id="52-resultados">5.2 Resultados</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Concepto</th>
+<th style="text-align: right;">Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>C1 — Cuña Guardián</strong></td>
+<td style="text-align: right;"><strong>+10</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">C2 — Caja Discreta</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">C3 — Cápsula Lisa</td>
+<td style="text-align: right;">−20</td>
+</tr>
+</tbody>
+</table>
+<p>El concepto <strong>Cuña Guardián</strong> obtuvo la puntuación más alta.</p>
+<p>Sus principales ventajas estuvieron relacionadas con la legibilidad de los indicadores, la resistencia a manipulación y la protección en condiciones de temperatura elevadas.</p>
+<p>La Caja Discreta resultó más sencilla y económica de fabricar, pero no obtuvo las mismas ventajas funcionales.</p>
+<p>Por su parte, la Cápsula Lisa presentó dificultades en instalación, manufactura y tiempo de prototipado.</p>
+<h3 id="53-decision-del-equipo">5.3 Decisión del equipo</h3>
+<p>El equipo seleccionó el <strong>Concepto 1 — Cuña Guardián</strong>.</p>
+<p>La evaluación también permitió identificar elementos que podían mejorarse antes de continuar el desarrollo.</p>
+<p>Se decidió considerar dos características de la Cápsula Lisa:</p>
+<ol>
+<li>Aristas redondeadas para mejorar la protección física.</li>
+<li>Junta de silicón para contribuir al objetivo de protección IP54.</li>
+</ol>
+<p>El principal riesgo identificado para Cuña Guardián fue su costo de fabricación, que deberá revisarse durante la etapa de diseño para manufactura.</p>
+<hr />
+<h2 id="6-boceto-tecnico-del-concepto-seleccionado">6. Boceto técnico del concepto seleccionado</h2>
+<p>Una vez seleccionado el concepto se desarrolló un boceto técnico para establecer su geometría, dimensiones, materiales y distribución interna.</p>
+<p>El diseño corresponde a una carcasa compacta con forma de cuña, pensada para instalarse de manera discreta dentro de un vehículo.</p>
+<h3 id="61-boceto-de-cuna-guardian">6.1 Boceto de Cuña Guardián</h3>
+<p><img alt="Boceto técnico de Cuña Guardián" src="../recursos/imgs/boceto-tecnico.png" /></p>
+<p><em>Figura 1. Boceto técnico del Concepto Cuña Guardián.</em></p>
+<h3 id="62-dimensiones-principales">6.2 Dimensiones principales</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Característica</th>
+<th style="text-align: left;">Especificación propuesta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Largo</td>
+<td style="text-align: left;">90 mm</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ancho</td>
+<td style="text-align: left;">60 mm</td>
+</tr>
+<tr>
+<td style="text-align: left;">Altura máxima</td>
+<td style="text-align: left;">25 mm</td>
+</tr>
+<tr>
+<td style="text-align: left;">Altura mínima</td>
+<td style="text-align: left;">15 mm</td>
+</tr>
+<tr>
+<td style="text-align: left;">Inclinación</td>
+<td style="text-align: left;">30°</td>
+</tr>
+<tr>
+<td style="text-align: left;">Material de carcasa</td>
+<td style="text-align: left;">PETG negro</td>
+</tr>
+<tr>
+<td style="text-align: left;">Espesor de pared</td>
+<td style="text-align: left;">2 mm</td>
+</tr>
+</tbody>
+</table>
+<h3 id="63-distribucion-de-componentes">6.3 Distribución de componentes</h3>
+<p>El boceto propone organizar los componentes electrónicos dentro de la carcasa de la siguiente manera:</p>
+<ul>
+<li>PCB de cuatro capas de aproximadamente 80 × 32 mm.</li>
+<li>Sujeción mediante rieles interiores.</li>
+<li>Celda de batería 18650 en una cuna inferior.</li>
+<li>Antenas ubicadas lejos de la batería.</li>
+<li>Prensaestopa lateral para el cable de comunicación J1939.</li>
+<li>Tres indicadores luminosos visibles desde el exterior.</li>
+</ul>
+<p>También se considera una tapa con dos ganchos y dos tornillos autorroscantes, de manera que el dispositivo pueda abrirse para mantenimiento o sustitución de la batería.</p>
+<h3 id="64-materiales-y-ensamble">6.4 Materiales y ensamble</h3>
+<p>El concepto seleccionado contempla PETG negro para la estructura principal, PETG translúcido para las guías de luz, junta de silicón y cinchos de nailon para su instalación.</p>
+<p>La intención es que la carcasa sea fabricable mediante impresión 3D, manteniendo un equilibrio entre tamaño, resistencia y facilidad de ensamble.</p>
+<p>Estas dimensiones corresponden a la propuesta desarrollada durante esta semana y servirán como referencia para las siguientes etapas de diseño.</p>
+<hr />
+<h2 id="7-diseno-conceptual-de-la-aplicacion">7. Diseño conceptual de la aplicación</h2>
+<p>La selección del concepto físico también incluyó el desarrollo de propuestas para la interfaz de usuario.</p>
+<p>Se utilizaron wireframes para estudiar cómo debería mostrarse la información más importante en la aplicación.</p>
+<p>El objetivo fue evitar una interfaz saturada de datos que dificultara identificar un evento de riesgo.</p>
+<h3 id="71-pantalla-de-funcionamiento-normal">7.1 Pantalla de funcionamiento normal</h3>
+<p>La primera pantalla representa una flota con sus unidades funcionando sin anomalías.</p>
+<p>La información principal incluye:</p>
+<ul>
+<li>Número de unidades protegidas.</li>
+<li>Estado general de la flota.</li>
+<li>Mapa de vehículos.</li>
+<li>Lista de unidades y sus estados.</li>
+<li>Acceso a información de un vehículo específico.</li>
+</ul>
+<p>El ejemplo documentado muestra una flota de 24 unidades con todas las unidades protegidas.</p>
+<h3 id="72-pantalla-de-alerta">7.2 Pantalla de alerta</h3>
+<p>La segunda pantalla presenta una situación de riesgo, utilizando como ejemplo una unidad con alerta de Nivel 3.</p>
+<p>La información principal incluye:</p>
+<ul>
+<li>Unidad afectada.</li>
+<li>Nivel de alerta.</li>
+<li>Hora de la última comunicación.</li>
+<li>Última ubicación válida.</li>
+<li>Estado de señales GNSS y LTE.</li>
+<li>Información de movimiento.</li>
+<li>Estado de la bitácora registrada.</li>
+</ul>
+<p>El propósito es que el personal de monitoreo pueda identificar rápidamente qué unidad requiere atención y qué información se conserva sobre el evento.</p>
+<h3 id="73-informacion-excluida-de-la-interfaz">7.3 Información excluida de la interfaz</h3>
+<p>Durante el desarrollo se decidió no colocar gráficas detalladas de RPM, combustible o datos crudos del bus CAN dentro de la pantalla principal.</p>
+<p>Tampoco se incluyó un botón para detener el motor.</p>
+<p>La prioridad de la aplicación es comunicar claramente el estado de seguridad de las unidades y facilitar la revisión de las alertas.</p>
+<hr />
+<h2 id="8-proceso-de-instalacion-propuesto">8. Proceso de instalación propuesto</h2>
+<p>También se desarrolló un flujo de instalación dividido en tres etapas.</p>
+<p>La intención es facilitar la incorporación del dispositivo a una flota y reducir la necesidad de herramientas o procedimientos complejos.</p>
+<h3 id="81-activacion-del-dispositivo">8.1 Activación del dispositivo</h3>
+<p>El primer paso consiste en escanear un código QR ubicado en la caja de Nervik.</p>
+<p>Desde la aplicación se asociaría el dispositivo a una unidad específica de la flota.</p>
+<h3 id="82-instalacion-fisica">8.2 Instalación física</h3>
+<p>El segundo paso consiste en conectar el dispositivo al puerto vehicular J1939 de nueve pines.</p>
+<p>Posteriormente se fija la carcasa mediante dos cinchos, colocando la cara inclinada en la orientación definida para el montaje.</p>
+<h3 id="83-autoprueba">8.3 Autoprueba</h3>
+<p>Una vez instalado, el dispositivo realizaría una autoprueba de aproximadamente 30 segundos.</p>
+<p>La verificación contempla:</p>
+<ul>
+<li>Alimentación eléctrica.</li>
+<li>Recepción de datos del bus J1939.</li>
+<li>Disponibilidad de señales GNSS.</li>
+<li>Estado de la comunicación celular.</li>
+</ul>
+<p>Al finalizar, los indicadores luminosos permitirían reconocer el estado del sistema.</p>
+<p>Este proceso describe el funcionamiento previsto para la versión integrada del producto.</p>
+<hr />
+<h2 id="9-justificacion-del-concepto-seleccionado">9. Justificación del concepto seleccionado</h2>
+<p>La selección de Cuña Guardián se sustentó en la comparación de los tres conceptos mediante criterios técnicos y de experiencia de usuario.</p>
+<p>La propuesta combina una forma compacta con indicadores fáciles de interpretar, un sistema de montaje sin herramientas y materiales compatibles con los recursos de fabricación previstos.</p>
+<p>Frente a Caja Discreta, ofrece ventajas en señalización y resistencia a manipulación.</p>
+<p>Frente a Cápsula Lisa, presenta una solución de fabricación e instalación más accesible para el equipo.</p>
+<p>La principal limitación identificada es el costo de fabricación, por lo que será importante revisar el diseño durante la siguiente etapa.</p>
+<p>El equipo también planteó simplificaciones para reducir costos, como evitar insertos innecesarios y considerar un sistema de prueba mediante contactos tipo <em>pogo pin</em>.</p>
+<hr />
+<h2 id="10-resultados-de-la-semana">10. Resultados de la semana</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Actividad</th>
+<th style="text-align: left;">Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tabla morfológica</td>
+<td style="text-align: left;">Siete parámetros y tres alternativas por parámetro</td>
+</tr>
+<tr>
+<td style="text-align: left;">Analogías tecnológicas</td>
+<td style="text-align: left;">Cuatro referencias de otros sectores</td>
+</tr>
+<tr>
+<td style="text-align: left;">Desarrollo de conceptos</td>
+<td style="text-align: left;">Cuña Guardián, Caja Discreta y Cápsula Lisa</td>
+</tr>
+<tr>
+<td style="text-align: left;">Matriz de Pugh</td>
+<td style="text-align: left;">Nueve criterios ponderados</td>
+</tr>
+<tr>
+<td style="text-align: left;">Concepto ganador</td>
+<td style="text-align: left;">Cuña Guardián (+10)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Boceto técnico</td>
+<td style="text-align: left;">Dimensiones, materiales y distribución interna</td>
+</tr>
+<tr>
+<td style="text-align: left;">Aplicación</td>
+<td style="text-align: left;">Pantallas de estado normal y alerta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Instalación</td>
+<td style="text-align: left;">Flujo de tres pasos</td>
+</tr>
+<tr>
+<td style="text-align: left;">Principal riesgo</td>
+<td style="text-align: left;">Costo de fabricación</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="conclusion">Conclusión</h2>
+<p>Durante la Semana 6 se desarrollaron tres conceptos de diseño y se compararon mediante una matriz de Pugh.</p>
+<p>El resultado favoreció al concepto <strong>Cuña Guardián</strong>, que obtuvo una puntuación ponderada de +10 frente a Caja Discreta y Cápsula Lisa.</p>
+<p>La propuesta seleccionada integra una carcasa en forma de cuña, indicadores independientes, un sistema de instalación mediante cinchos y un diseño interior orientado a organizar los componentes electrónicos.</p>
+<p>Además, se definieron las pantallas principales de la aplicación y un procedimiento conceptual de instalación.</p>
+<p>El siguiente paso será evaluar la viabilidad técnica y económica del producto, considerando los materiales, componentes y procesos necesarios para construirlo.</p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="../semana5/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Semana 5">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Semana 5
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../semana7/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Semana 7">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                Semana 7
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "content.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

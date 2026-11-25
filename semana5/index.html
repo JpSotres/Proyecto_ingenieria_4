@@ -1,0 +1,2636 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../semana4/">
+      
+      
+        <link rel="next" href="../semana6/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Semana 5 - Proyecto de Ingeniería 4</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#diseno-de-producto-pds-y-arquitectura-del-sistema" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Proyecto de Ingeniería 4" class="md-header__button md-logo" aria-label="Proyecto de Ingeniería 4" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m-2 12c-.25 0-.46-.18-.5-.42l-.37-2.65c-.63-.25-1.17-.59-1.69-.99l-2.49 1.01c-.22.08-.49 0-.61-.22l-2-3.46a.493.493 0 0 1 .12-.64l2.11-1.66L4.5 12l.07-1-2.11-1.63a.493.493 0 0 1-.12-.64l2-3.46c.12-.22.39-.31.61-.22l2.49 1c.52-.39 1.06-.73 1.69-.98l.37-2.65c.04-.24.25-.42.5-.42h4c.25 0 .46.18.5.42l.37 2.65c.63.25 1.17.59 1.69.98l2.49-1c.22-.09.49 0 .61.22l2 3.46c.13.22.07.49-.12.64L19.43 11l.07 1-.07 1 2.11 1.63c.19.15.25.42.12.64l-2 3.46c-.12.22-.39.31-.61.22l-2.49-1c-.52.39-1.06.73-1.69.98l-.37 2.65c-.04.24-.25.42-.5.42zm1.25-18-.37 2.61c-1.2.25-2.26.89-3.03 1.78L5.44 7.35l-.75 1.3L6.8 10.2a5.55 5.55 0 0 0 0 3.6l-2.12 1.56.75 1.3 2.43-1.04c.77.88 1.82 1.52 3.01 1.76l.37 2.62h1.52l.37-2.61c1.19-.25 2.24-.89 3.01-1.77l2.43 1.04.75-1.3-2.12-1.55c.4-1.17.4-2.44 0-3.61l2.11-1.55-.75-1.3-2.41 1.04a5.42 5.42 0 0 0-3.03-1.77L12.75 4z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Proyecto de Ingeniería 4
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Semana 5
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="light-blue"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../About/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About me
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../semana1/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semana 1
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../semana2/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semana 2
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../semana3/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semana 3
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../semana4/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semana 4
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semana 5
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../semana6/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semana 6
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../semana7/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semana 7
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Proyecto de Ingeniería 4" class="md-nav__button md-logo" aria-label="Proyecto de Ingeniería 4" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m-2 12c-.25 0-.46-.18-.5-.42l-.37-2.65c-.63-.25-1.17-.59-1.69-.99l-2.49 1.01c-.22.08-.49 0-.61-.22l-2-3.46a.493.493 0 0 1 .12-.64l2.11-1.66L4.5 12l.07-1-2.11-1.63a.493.493 0 0 1-.12-.64l2-3.46c.12-.22.39-.31.61-.22l2.49 1c.52-.39 1.06-.73 1.69-.98l.37-2.65c.04-.24.25-.42.5-.42h4c.25 0 .46.18.5.42l.37 2.65c.63.25 1.17.59 1.69.98l2.49-1c.22-.09.49 0 .61.22l2 3.46c.13.22.07.49-.12.64L19.43 11l.07 1-.07 1 2.11 1.63c.19.15.25.42.12.64l-2 3.46c-.12.22-.39.31-.61.22l-2.49-1c-.52.39-1.06.73-1.69.98l-.37 2.65c-.04.24-.25.42-.5.42zm1.25-18-.37 2.61c-1.2.25-2.26.89-3.03 1.78L5.44 7.35l-.75 1.3L6.8 10.2a5.55 5.55 0 0 0 0 3.6l-2.12 1.56.75 1.3 2.43-1.04c.77.88 1.82 1.52 3.01 1.76l.37 2.62h1.52l.37-2.61c1.19-.25 2.24-.89 3.01-1.77l2.43 1.04.75-1.3-2.12-1.55c.4-1.17.4-2.44 0-3.61l2.11-1.55-.75-1.3-2.41 1.04a5.42 5.42 0 0 0-3.03-1.77L12.75 4z"/></svg>
+
+    </a>
+    Proyecto de Ingeniería 4
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../About/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About me
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semana1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semana2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semana3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semana4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 5
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Introducción
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-definicion-tecnica-de-nervik" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Definición técnica de Nervik
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Definición técnica de Nervik">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-funciones-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Funciones principales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-exclusiones-del-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Exclusiones del diseño
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-especificacion-de-diseno-de-producto-pds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Especificación de Diseño de Producto (PDS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Especificación de Diseño de Producto (PDS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-desarrollo-del-pds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Desarrollo del PDS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-requisitos-de-desempeno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Requisitos de desempeño
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-requisitos-de-interfaz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Requisitos de interfaz
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-requisitos-de-alimentacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Requisitos de alimentación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-requisitos-de-procesamiento-y-almacenamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Requisitos de procesamiento y almacenamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-requisitos-fisicos-y-ambientales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 Requisitos físicos y ambientales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-fiabilidad-costo-e-instalacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7 Fiabilidad, costo e instalación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-decision-sobre-la-arquitectura-de-inteligencia-artificial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Decisión sobre la arquitectura de inteligencia artificial
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Decisión sobre la arquitectura de inteligencia artificial">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-arquitectura-seleccionada-edge-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Arquitectura seleccionada: Edge AI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-justificacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Justificación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-decision-del-equipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Decisión del equipo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-arquitectura-general-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Arquitectura general del sistema
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Arquitectura general del sistema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-los-siete-modulos-de-nervik" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Los siete módulos de Nervik
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m1-interfaz-vehicular" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        M1 — Interfaz vehicular
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m2-gestion-de-energia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        M2 — Gestión de energía
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m3-sensado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        M3 — Sensado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m4-procesamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        M4 — Procesamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m5-registro-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        M5 — Registro local
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m6-interfaz-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        M6 — Interfaz local
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m7-comunicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        M7 — Comunicación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-interfaces-y-protocolos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Interfaces y protocolos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Interfaces y protocolos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-diagrama-de-arquitectura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Diagrama de arquitectura
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-maquina-de-estados-de-alerta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Máquina de estados de alerta
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Máquina de estados de alerta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-estados-definidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Estados definidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-flujo-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Flujo general
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-trazabilidad-entre-necesidades-y-requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Trazabilidad entre necesidades y requisitos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-riesgos-identificados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Riesgos identificados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-investigacion-preliminar-de-componentes-y-costos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Investigación preliminar de componentes y costos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Investigación preliminar de componentes y costos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-resultados-preliminares" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 Resultados preliminares
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-resultados-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Resultados principales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Resultados principales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#decisiones-relevantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decisiones relevantes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-reflexion-personal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Reflexión personal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Conclusión
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semana6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semana7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Introducción
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-definicion-tecnica-de-nervik" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Definición técnica de Nervik
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Definición técnica de Nervik">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-funciones-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Funciones principales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-exclusiones-del-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Exclusiones del diseño
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-especificacion-de-diseno-de-producto-pds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Especificación de Diseño de Producto (PDS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Especificación de Diseño de Producto (PDS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-desarrollo-del-pds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Desarrollo del PDS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-requisitos-de-desempeno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Requisitos de desempeño
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-requisitos-de-interfaz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Requisitos de interfaz
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-requisitos-de-alimentacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Requisitos de alimentación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-requisitos-de-procesamiento-y-almacenamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Requisitos de procesamiento y almacenamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-requisitos-fisicos-y-ambientales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 Requisitos físicos y ambientales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-fiabilidad-costo-e-instalacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7 Fiabilidad, costo e instalación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-decision-sobre-la-arquitectura-de-inteligencia-artificial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Decisión sobre la arquitectura de inteligencia artificial
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Decisión sobre la arquitectura de inteligencia artificial">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-arquitectura-seleccionada-edge-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Arquitectura seleccionada: Edge AI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-justificacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Justificación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-decision-del-equipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Decisión del equipo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-arquitectura-general-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Arquitectura general del sistema
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Arquitectura general del sistema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-los-siete-modulos-de-nervik" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Los siete módulos de Nervik
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m1-interfaz-vehicular" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        M1 — Interfaz vehicular
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m2-gestion-de-energia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        M2 — Gestión de energía
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m3-sensado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        M3 — Sensado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m4-procesamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        M4 — Procesamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m5-registro-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        M5 — Registro local
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m6-interfaz-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        M6 — Interfaz local
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m7-comunicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        M7 — Comunicación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-interfaces-y-protocolos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Interfaces y protocolos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Interfaces y protocolos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-diagrama-de-arquitectura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Diagrama de arquitectura
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-maquina-de-estados-de-alerta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Máquina de estados de alerta
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Máquina de estados de alerta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-estados-definidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Estados definidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-flujo-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Flujo general
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-trazabilidad-entre-necesidades-y-requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Trazabilidad entre necesidades y requisitos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-riesgos-identificados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Riesgos identificados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-investigacion-preliminar-de-componentes-y-costos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Investigación preliminar de componentes y costos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Investigación preliminar de componentes y costos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-resultados-preliminares" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 Resultados preliminares
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-resultados-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Resultados principales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Resultados principales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#decisiones-relevantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decisiones relevantes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-reflexion-personal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Reflexión personal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Conclusión
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="diseno-de-producto-pds-y-arquitectura-del-sistema">Diseño de producto: PDS y arquitectura del sistema</h1>
+<div class="admonition info">
+<p class="admonition-title">Objetivo de la semana</p>
+<p>Transformar la propuesta de valor de Nervik en requisitos técnicos medibles y definir una arquitectura que permita comprender cómo se relacionan el hardware, el procesamiento local, el registro de información y la aplicación.</p>
+</div>
+<hr />
+<h2 id="1-introduccion">1. Introducción</h2>
+<p>Durante las semanas anteriores analizamos el problema que busca resolver Nervik, la propiedad intelectual relacionada con el producto y las características del mercado al que queremos dirigirnos.</p>
+<p>En esta semana comenzamos a definir <strong>cómo deberá funcionar técnicamente nuestro dispositivo</strong>.</p>
+<p>Para ello utilizamos dos herramientas principales:</p>
+<ul>
+<li><strong>Product Design Specification (PDS):</strong> documento que establece los requisitos medibles del producto.</li>
+<li><strong>Arquitectura del sistema:</strong> representación de los módulos que integran Nervik y de las conexiones entre ellos.</li>
+</ul>
+<p>El propósito fue pasar de una idea general a una propuesta técnica que pudiera utilizarse como referencia para el diseño, la selección de componentes y las pruebas posteriores.</p>
+<hr />
+<h2 id="2-definicion-tecnica-de-nervik">2. Definición técnica de Nervik</h2>
+<p>Nervik es un dispositivo electrónico orientado al monitoreo de vehículos de transporte de carga.</p>
+<p>La propuesta consiste en analizar información del sistema de posicionamiento, la comunicación celular y los datos disponibles del vehículo para identificar condiciones anómalas.</p>
+<p>Uno de los objetivos principales es que el dispositivo pueda <strong>continuar procesando y registrando información aunque se pierda la conectividad externa</strong>.</p>
+<p>Cuando se restablezca la comunicación, los eventos almacenados podrían enviarse al sistema de monitoreo para su revisión.</p>
+<h3 id="21-funciones-principales">2.1 Funciones principales</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Función</th>
+<th style="text-align: left;">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Monitoreo GNSS</td>
+<td style="text-align: left;">Obtener ubicación e información relacionada con la calidad de señal</td>
+</tr>
+<tr>
+<td style="text-align: left;">Comunicación celular</td>
+<td style="text-align: left;">Supervisar la disponibilidad de conectividad</td>
+</tr>
+<tr>
+<td style="text-align: left;">Lectura CAN/J1939</td>
+<td style="text-align: left;">Obtener información del vehículo sin intervenir en sus controles</td>
+</tr>
+<tr>
+<td style="text-align: left;">Procesamiento local</td>
+<td style="text-align: left;">Analizar señales y determinar si existe una condición anómala</td>
+</tr>
+<tr>
+<td style="text-align: left;">Registro de eventos</td>
+<td style="text-align: left;">Conservar información durante interrupciones de comunicación</td>
+</tr>
+<tr>
+<td style="text-align: left;">Generación de alertas</td>
+<td style="text-align: left;">Clasificar eventos y enviarlos cuando exista conectividad</td>
+</tr>
+<tr>
+<td style="text-align: left;">Interfaz de usuario</td>
+<td style="text-align: left;">Mostrar el estado del dispositivo y permitir una autoprueba</td>
+</tr>
+</tbody>
+</table>
+<h3 id="22-exclusiones-del-diseno">2.2 Exclusiones del diseño</h3>
+<p>Como parte de la definición del producto, el equipo estableció que Nervik no debe:</p>
+<ul>
+<li>Detener o bloquear el motor.</li>
+<li>Actuar sobre frenos, dirección o transmisión.</li>
+<li>Enviar instrucciones de control al vehículo.</li>
+<li>Decidir automáticamente cambios de ruta.</li>
+<li>Depender de la nube para realizar la detección local.</li>
+</ul>
+<p>Estas restricciones son importantes porque el dispositivo busca complementar los sistemas de seguridad existentes, sin introducir nuevas acciones sobre la operación del camión.</p>
+<hr />
+<h2 id="3-especificacion-de-diseno-de-producto-pds">3. Especificación de Diseño de Producto (PDS)</h2>
+<p>El PDS permite convertir las necesidades del usuario en requisitos que puedan verificarse mediante pruebas.</p>
+<p>A diferencia de una descripción general, cada requisito debe establecer qué se espera del producto y cómo se comprobará su cumplimiento.</p>
+<h3 id="31-desarrollo-del-pds">3.1 Desarrollo del PDS</h3>
+<p>El equipo comenzó con restricciones relacionadas con:</p>
+<ul>
+<li>Condiciones ambientales.</li>
+<li>Dimensiones de la carcasa.</li>
+<li>Costo de prototipado.</li>
+<li>Facilidad de instalación.</li>
+<li>Alimentación eléctrica.</li>
+<li>Seguridad y comunicación.</li>
+</ul>
+<p>En una primera aproximación se consideraron dimensiones máximas de 150 × 100 × 50 mm y un presupuesto de prototipo de $2,500 MXN por unidad.</p>
+<p>Posteriormente, se desarrolló el <strong>PDS v1.0</strong>, más específico, con 56 requisitos distribuidos en diez categorías.</p>
+<p>Los requisitos incluyen valores objetivo, prioridades y métodos de verificación.</p>
+<h3 id="32-requisitos-de-desempeno">3.2 Requisitos de desempeño</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Código</th>
+<th style="text-align: left;">Requisito</th>
+<th style="text-align: left;">Objetivo</th>
+<th style="text-align: left;">Verificación propuesta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">F-01</td>
+<td style="text-align: left;">Detección de interferencia RF</td>
+<td style="text-align: left;">≤ 5 s</td>
+<td style="text-align: left;">Prueba controlada de interferencia</td>
+</tr>
+<tr>
+<td style="text-align: left;">F-02</td>
+<td style="text-align: left;">Falsos positivos</td>
+<td style="text-align: left;">≤ 1 por cada 1,000 km</td>
+<td style="text-align: left;">Pruebas de ruta y bitácora</td>
+</tr>
+<tr>
+<td style="text-align: left;">F-03</td>
+<td style="text-align: left;">Análisis multiseñal</td>
+<td style="text-align: left;">≥ 3 señales simultáneas</td>
+<td style="text-align: left;">Revisión del firmware</td>
+</tr>
+<tr>
+<td style="text-align: left;">F-04</td>
+<td style="text-align: left;">Inferencia local</td>
+<td style="text-align: left;">≤ 100 ms por ventana</td>
+<td style="text-align: left;">Medición de tiempo en el microcontrolador</td>
+</tr>
+<tr>
+<td style="text-align: left;">F-05</td>
+<td style="text-align: left;">Operación sin conectividad</td>
+<td style="text-align: left;">Detección y registro sin enlace celular</td>
+<td style="text-align: left;">Prueba con comunicación deshabilitada</td>
+</tr>
+<tr>
+<td style="text-align: left;">F-08</td>
+<td style="text-align: left;">Alertas por niveles</td>
+<td style="text-align: left;">Estados definidos</td>
+<td style="text-align: left;">Prueba de máquina de estados</td>
+</tr>
+<tr>
+<td style="text-align: left;">F-09</td>
+<td style="text-align: left;">Transmisión diferida</td>
+<td style="text-align: left;">Eventos enviados en ≤ 60 s al reconectar</td>
+<td style="text-align: left;">Prueba de reconexión</td>
+</tr>
+</tbody>
+</table>
+<p>Estos objetivos permiten establecer cómo deberá evaluarse el rendimiento del sistema cuando se desarrollen las pruebas.</p>
+<h3 id="33-requisitos-de-interfaz">3.3 Requisitos de interfaz</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Código</th>
+<th style="text-align: left;">Requisito</th>
+<th style="text-align: left;">Objetivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">I-01</td>
+<td style="text-align: left;">Interfaz vehicular</td>
+<td style="text-align: left;">SAE J1939 sobre CAN 2.0B</td>
+</tr>
+<tr>
+<td style="text-align: left;">I-02</td>
+<td style="text-align: left;">Comunicación con el vehículo</td>
+<td style="text-align: left;">Modo solo escucha, sin transmitir tramas</td>
+</tr>
+<tr>
+<td style="text-align: left;">I-03</td>
+<td style="text-align: left;">Datos vehiculares</td>
+<td style="text-align: left;">Velocidad, RPM, freno, odómetro y combustible</td>
+</tr>
+<tr>
+<td style="text-align: left;">I-04</td>
+<td style="text-align: left;">Comunicación externa</td>
+<td style="text-align: left;">LTE Cat-M1 / NB-IoT y respaldo previsto</td>
+</tr>
+<tr>
+<td style="text-align: left;">I-05</td>
+<td style="text-align: left;">Interfaz local</td>
+<td style="text-align: left;">3 LED y 2 botones</td>
+</tr>
+<tr>
+<td style="text-align: left;">I-06</td>
+<td style="text-align: left;">Expansión</td>
+<td style="text-align: left;">Puerto reservado para sensor de remolque</td>
+</tr>
+</tbody>
+</table>
+<p>Una corrección importante fue establecer que la interfaz principal para tractocamiones será <strong>SAE J1939 mediante un conector Deutsch de nueve pines</strong>, y no el puerto OBD-II convencional utilizado en muchos automóviles.</p>
+<h3 id="34-requisitos-de-alimentacion">3.4 Requisitos de alimentación</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Código</th>
+<th style="text-align: left;">Requisito</th>
+<th style="text-align: left;">Objetivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">E-01</td>
+<td style="text-align: left;">Tensión de entrada</td>
+<td style="text-align: left;">9–36 V DC</td>
+</tr>
+<tr>
+<td style="text-align: left;">E-02</td>
+<td style="text-align: left;">Consumo de operación</td>
+<td style="text-align: left;">≤ 2 W promedio</td>
+</tr>
+<tr>
+<td style="text-align: left;">E-03</td>
+<td style="text-align: left;">Consumo en reposo</td>
+<td style="text-align: left;">≤ 50 mW</td>
+</tr>
+<tr>
+<td style="text-align: left;">E-04</td>
+<td style="text-align: left;">Respaldo de energía</td>
+<td style="text-align: left;">≥ 72 horas</td>
+</tr>
+<tr>
+<td style="text-align: left;">E-05</td>
+<td style="text-align: left;">Protección eléctrica</td>
+<td style="text-align: left;">Polaridad, sobretensión y transitorios</td>
+</tr>
+<tr>
+<td style="text-align: left;">E-06</td>
+<td style="text-align: left;">Detección de desconexión</td>
+<td style="text-align: left;">Evento registrado en ≤ 10 s</td>
+</tr>
+</tbody>
+</table>
+<p>La alimentación es uno de los aspectos más importantes de la arquitectura, debido a que el dispositivo se propone para un entorno vehicular.</p>
+<p>Por ello, el diseño completo contempla conversión de voltaje, protección eléctrica y una batería de respaldo.</p>
+<h3 id="35-requisitos-de-procesamiento-y-almacenamiento">3.5 Requisitos de procesamiento y almacenamiento</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Código</th>
+<th style="text-align: left;">Requisito</th>
+<th style="text-align: left;">Objetivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">P-01</td>
+<td style="text-align: left;">Microcontrolador</td>
+<td style="text-align: left;">ARM Cortex-M de ≥ 133 MHz y ≥ 264 kB RAM</td>
+</tr>
+<tr>
+<td style="text-align: left;">P-02</td>
+<td style="text-align: left;">Modelo TinyML</td>
+<td style="text-align: left;">Tamaño ≤ 256 kB</td>
+</tr>
+<tr>
+<td style="text-align: left;">P-03</td>
+<td style="text-align: left;">Memoria de registro</td>
+<td style="text-align: left;">Flash ≥ 8 MB</td>
+</tr>
+<tr>
+<td style="text-align: left;">P-04</td>
+<td style="text-align: left;">Integridad de eventos</td>
+<td style="text-align: left;">Firma HMAC-SHA256</td>
+</tr>
+<tr>
+<td style="text-align: left;">P-05</td>
+<td style="text-align: left;">Protección de bitácora</td>
+<td style="text-align: left;">Evitar modificación o borrado desde interfaces de usuario</td>
+</tr>
+<tr>
+<td style="text-align: left;">P-06</td>
+<td style="text-align: left;">Reloj sin GNSS</td>
+<td style="text-align: left;">Deriva objetivo ≤ 2 s/día</td>
+</tr>
+</tbody>
+</table>
+<p>La finalidad del almacenamiento es conservar información que pueda recuperarse después de una interrupción.</p>
+<p>La firma de eventos forma parte de la arquitectura propuesta para mejorar la integridad de los registros.</p>
+<h3 id="36-requisitos-fisicos-y-ambientales">3.6 Requisitos físicos y ambientales</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Código</th>
+<th style="text-align: left;">Requisito</th>
+<th style="text-align: left;">Objetivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">M-01</td>
+<td style="text-align: left;">Dimensiones</td>
+<td style="text-align: left;">≤ 90 × 60 × 25 mm</td>
+</tr>
+<tr>
+<td style="text-align: left;">M-02</td>
+<td style="text-align: left;">Masa</td>
+<td style="text-align: left;">≤ 150 g con batería</td>
+</tr>
+<tr>
+<td style="text-align: left;">M-03</td>
+<td style="text-align: left;">Geometría</td>
+<td style="text-align: left;">Variante B, cuña biselada</td>
+</tr>
+<tr>
+<td style="text-align: left;">M-04</td>
+<td style="text-align: left;">Material</td>
+<td style="text-align: left;">PETG</td>
+</tr>
+<tr>
+<td style="text-align: left;">M-05</td>
+<td style="text-align: left;">Protección contra ingreso</td>
+<td style="text-align: left;">IP54 deseable</td>
+</tr>
+<tr>
+<td style="text-align: left;">A-01</td>
+<td style="text-align: left;">Temperatura de operación</td>
+<td style="text-align: left;">−10 °C a +70 °C</td>
+</tr>
+<tr>
+<td style="text-align: left;">A-02</td>
+<td style="text-align: left;">Temperatura de almacenamiento</td>
+<td style="text-align: left;">−20 °C a +85 °C</td>
+</tr>
+</tbody>
+</table>
+<p>El tamaño del dispositivo y su instalación discreta condicionan el diseño de la carcasa y la distribución de los componentes electrónicos.</p>
+<h3 id="37-fiabilidad-costo-e-instalacion">3.7 Fiabilidad, costo e instalación</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Categoría</th>
+<th style="text-align: left;">Requisito</th>
+<th style="text-align: left;">Objetivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Fiabilidad</td>
+<td style="text-align: left;">Vida útil</td>
+<td style="text-align: left;">5 años</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fiabilidad</td>
+<td style="text-align: left;">Autoprueba</td>
+<td style="text-align: left;">Resultado en ≤ 30 s</td>
+</tr>
+<tr>
+<td style="text-align: left;">Costo</td>
+<td style="text-align: left;">BOM en lote de 100</td>
+<td style="text-align: left;">≤ $650 MXN por unidad</td>
+</tr>
+<tr>
+<td style="text-align: left;">Costo</td>
+<td style="text-align: left;">Manufactura y ensamble</td>
+<td style="text-align: left;">≤ $250 MXN por unidad</td>
+</tr>
+<tr>
+<td style="text-align: left;">Comercial</td>
+<td style="text-align: left;">Precio propuesto</td>
+<td style="text-align: left;">$1,800 instalado + $300 mensuales</td>
+</tr>
+<tr>
+<td style="text-align: left;">Instalación</td>
+<td style="text-align: left;">Tiempo requerido</td>
+<td style="text-align: left;">≤ 10 min</td>
+</tr>
+<tr>
+<td style="text-align: left;">Instalación</td>
+<td style="text-align: left;">Intervención al vehículo</td>
+<td style="text-align: left;">Sin cortar cables ni perforar</td>
+</tr>
+<tr>
+<td style="text-align: left;">Interfaz</td>
+<td style="text-align: left;">Alta en aplicación</td>
+<td style="text-align: left;">≤ 5 min</td>
+</tr>
+</tbody>
+</table>
+<p>Los costos y las características anteriores corresponden a metas del PDS, no a resultados de fabricación o validación.</p>
+<hr />
+<h2 id="4-decision-sobre-la-arquitectura-de-inteligencia-artificial">4. Decisión sobre la arquitectura de inteligencia artificial</h2>
+<p>Una de las decisiones más importantes del equipo fue definir dónde se ejecutaría el procesamiento inteligente de Nervik.</p>
+<p>Se compararon dos posibilidades:</p>
+<ol>
+<li>Procesar las señales mediante servicios en la nube.</li>
+<li>Ejecutar el análisis directamente en el dispositivo.</li>
+</ol>
+<h3 id="41-arquitectura-seleccionada-edge-ai">4.1 Arquitectura seleccionada: Edge AI</h3>
+<p>Se decidió utilizar una arquitectura de procesamiento local, también conocida como <strong>Edge AI</strong>.</p>
+<p>Esto significa que el microcontrolador analiza los datos sin necesitar una conexión permanente a internet.</p>
+<h3 id="42-justificacion">4.2 Justificación</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Factor</th>
+<th style="text-align: left;">Procesamiento en la nube</th>
+<th style="text-align: left;">Procesamiento local</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Dependencia de internet</td>
+<td style="text-align: left;">Alta</td>
+<td style="text-align: left;">Baja para la detección</td>
+</tr>
+<tr>
+<td style="text-align: left;">Detección durante una interrupción</td>
+<td style="text-align: left;">Limitada</td>
+<td style="text-align: left;">Prevista</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latencia</td>
+<td style="text-align: left;">Depende de la conexión</td>
+<td style="text-align: left;">Depende del hardware local</td>
+</tr>
+<tr>
+<td style="text-align: left;">Costo por inferencia</td>
+<td style="text-align: left;">Puede requerir servicios externos</td>
+<td style="text-align: left;">No requiere pagar cada inferencia</td>
+</tr>
+<tr>
+<td style="text-align: left;">Registro durante desconexión</td>
+<td style="text-align: left;">Necesita mecanismos adicionales</td>
+<td style="text-align: left;">Puede integrarse al dispositivo</td>
+</tr>
+</tbody>
+</table>
+<h3 id="43-decision-del-equipo">4.3 Decisión del equipo</h3>
+<p>Se propuso utilizar un modelo TinyML que funcione en el microcontrolador para clasificar condiciones anómalas.</p>
+<p>La comunicación con la nube se reservaría para transmitir eventos, consultar información y generar reportes cuando exista conectividad.</p>
+<p>Esta decisión está relacionada con la propuesta de valor de Nervik: mantener funciones importantes cuando el vehículo pierde comunicación.</p>
+<hr />
+<h2 id="5-arquitectura-general-del-sistema">5. Arquitectura general del sistema</h2>
+<p>Para organizar el producto se definieron <strong>siete módulos internos</strong>, además de los sistemas externos con los que se comunicará.</p>
+<p>Cada módulo tiene una función específica y se relaciona con los demás mediante interfaces eléctricas o protocolos de comunicación.</p>
+<h3 id="51-los-siete-modulos-de-nervik">5.1 Los siete módulos de Nervik</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Módulo</th>
+<th style="text-align: left;">Nombre</th>
+<th style="text-align: left;">Función</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">M1</td>
+<td style="text-align: left;">Interfaz vehicular</td>
+<td style="text-align: left;">Obtener información del bus J1939</td>
+</tr>
+<tr>
+<td style="text-align: left;">M2</td>
+<td style="text-align: left;">Gestión de energía</td>
+<td style="text-align: left;">Alimentar el dispositivo y gestionar el respaldo</td>
+</tr>
+<tr>
+<td style="text-align: left;">M3</td>
+<td style="text-align: left;">Sensado</td>
+<td style="text-align: left;">Adquirir señales GNSS, celulares y de movimiento</td>
+</tr>
+<tr>
+<td style="text-align: left;">M4</td>
+<td style="text-align: left;">Procesamiento</td>
+<td style="text-align: left;">Analizar información y determinar estados</td>
+</tr>
+<tr>
+<td style="text-align: left;">M5</td>
+<td style="text-align: left;">Registro local</td>
+<td style="text-align: left;">Conservar eventos</td>
+</tr>
+<tr>
+<td style="text-align: left;">M6</td>
+<td style="text-align: left;">Interfaz local</td>
+<td style="text-align: left;">Mostrar estados y permitir autoprueba</td>
+</tr>
+<tr>
+<td style="text-align: left;">M7</td>
+<td style="text-align: left;">Comunicación</td>
+<td style="text-align: left;">Enviar información hacia el sistema externo</td>
+</tr>
+</tbody>
+</table>
+<h3 id="m1-interfaz-vehicular">M1 — Interfaz vehicular</h3>
+<p>La interfaz vehicular permite que Nervik reciba información del camión mediante CAN/J1939.</p>
+<p>La arquitectura considera un transceptor CAN, protecciones eléctricas y un modo de operación de solo escucha.</p>
+<p>El dispositivo no debe transmitir comandos que afecten los sistemas del vehículo.</p>
+<h3 id="m2-gestion-de-energia">M2 — Gestión de energía</h3>
+<p>Este módulo proporciona las tensiones requeridas por los componentes.</p>
+<p>La versión integrada considera:</p>
+<ul>
+<li>Entrada nominal de 12/24 V.</li>
+<li>Conversión DC-DC.</li>
+<li>Protección contra inversión de polaridad.</li>
+<li>Protección contra transitorios eléctricos.</li>
+<li>Batería LiFePO₄ de respaldo.</li>
+</ul>
+<h3 id="m3-sensado">M3 — Sensado</h3>
+<p>Se encarga de adquirir información relacionada con el movimiento y el entorno de comunicación.</p>
+<p>Incluye:</p>
+<ul>
+<li>Receptor GNSS multiconstelación.</li>
+<li>IMU de seis ejes.</li>
+<li>Información de intensidad y calidad de señal.</li>
+<li>Sensor de manipulación de la carcasa.</li>
+</ul>
+<h3 id="m4-procesamiento">M4 — Procesamiento</h3>
+<p>Es el núcleo de decisión del dispositivo.</p>
+<p>Recibe las lecturas de los demás módulos, ejecuta el firmware, procesa los datos y determina el estado de alerta correspondiente.</p>
+<p>Aquí se propone ejecutar el modelo TinyML.</p>
+<h3 id="m5-registro-local">M5 — Registro local</h3>
+<p>Este módulo almacena información relevante durante el funcionamiento del dispositivo.</p>
+<p>La propuesta contempla memoria flash, bitácora local y mecanismos de integridad para los registros.</p>
+<p>Cuando se restablezca la comunicación, la información almacenada podría sincronizarse con la plataforma externa.</p>
+<h3 id="m6-interfaz-local">M6 — Interfaz local</h3>
+<p>Permite identificar rápidamente el estado del dispositivo.</p>
+<p>Se contemplan:</p>
+<ul>
+<li>LED de alimentación.</li>
+<li>LED de comunicación.</li>
+<li>LED de alerta.</li>
+<li>Botón de reinicio.</li>
+<li>Botón de autoprueba.</li>
+</ul>
+<h3 id="m7-comunicacion">M7 — Comunicación</h3>
+<p>Este módulo permite transmitir información al exterior mediante comunicación celular.</p>
+<p>La arquitectura propone LTE Cat-M1 / NB-IoT y mecanismos de reintento cuando exista una pérdida temporal de conectividad.</p>
+<p>La comunicación externa no debe ser indispensable para que el procesamiento y el registro local continúen funcionando.</p>
+<hr />
+<h2 id="6-interfaces-y-protocolos">6. Interfaces y protocolos</h2>
+<p>Definir las interfaces permite identificar cómo se conectarán los módulos y qué características debe tener el hardware.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Interfaz</th>
+<th style="text-align: left;">Comunicación</th>
+<th style="text-align: left;">Protocolo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">IF-1</td>
+<td style="text-align: left;">Vehículo → M1</td>
+<td style="text-align: left;">CAN 2.0B / SAE J1939</td>
+</tr>
+<tr>
+<td style="text-align: left;">IF-2</td>
+<td style="text-align: left;">M1 → M4</td>
+<td style="text-align: left;">SPI o controlador CAN integrado</td>
+</tr>
+<tr>
+<td style="text-align: left;">IF-3</td>
+<td style="text-align: left;">Sensores → M4</td>
+<td style="text-align: left;">UART, I²C y SPI</td>
+</tr>
+<tr>
+<td style="text-align: left;">IF-4</td>
+<td style="text-align: left;">M4 ↔ M5</td>
+<td style="text-align: left;">SPI</td>
+</tr>
+<tr>
+<td style="text-align: left;">IF-5</td>
+<td style="text-align: left;">M4 ↔ M7</td>
+<td style="text-align: left;">UART y comandos AT</td>
+</tr>
+<tr>
+<td style="text-align: left;">IF-6</td>
+<td style="text-align: left;">M4 ↔ M6</td>
+<td style="text-align: left;">GPIO</td>
+</tr>
+<tr>
+<td style="text-align: left;">IF-7</td>
+<td style="text-align: left;">M2 → módulos</td>
+<td style="text-align: left;">Alimentación regulada</td>
+</tr>
+<tr>
+<td style="text-align: left;">IF-8</td>
+<td style="text-align: left;">M7 ↔ Nube</td>
+<td style="text-align: left;">MQTT o HTTPS sobre TLS</td>
+</tr>
+</tbody>
+</table>
+<h3 id="61-diagrama-de-arquitectura">6.1 Diagrama de arquitectura</h3>
+<p>El siguiente diagrama resume la relación general entre los módulos previstos.</p>
+<pre class="mermaid"><code>flowchart TD
+    A["Vehículo: SAE J1939 / CAN"] --&gt; M1["M1: Interfaz vehicular"]
+    B["Fuente 12/24 V"] --&gt; M2["M2: Gestión de energía"]
+    C["GNSS, señal celular e IMU"] --&gt; M3["M3: Sensado"]
+
+    M1 --&gt;|SPI / CAN| M4["M4: Procesamiento local y TinyML"]
+    M3 --&gt;|UART / I2C / SPI| M4
+
+    M2 --&gt;|Alimentación| M4
+    M2 --&gt;|Alimentación| M3
+
+    M4 &lt;--&gt;|SPI| M5["M5: Registro local"]
+    M4 &lt;--&gt;|GPIO| M6["M6: LEDs y botones"]
+    M4 &lt;--&gt;|UART| M7["M7: Comunicación LTE"]
+
+    M7 --&gt;|MQTT / HTTPS| D["Servidor y aplicación"]
+    D --&gt; E["Centro de monitoreo"]</code></pre>
+<p>Este diagrama representa la arquitectura propuesta para Nervik. No corresponde a un circuito eléctrico ni sustituye al esquemático de PCB.</p>
+<hr />
+<h2 id="7-maquina-de-estados-de-alerta">7. Máquina de estados de alerta</h2>
+<p>El equipo definió una respuesta gradual ante las anomalías.</p>
+<p>La intención es evitar que una única variación de señal genere automáticamente una alerta de máxima prioridad.</p>
+<h3 id="71-estados-definidos">7.1 Estados definidos</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Estado</th>
+<th style="text-align: left;">Condición</th>
+<th style="text-align: left;">Acción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">N0 — Normal</td>
+<td style="text-align: left;">Señales y comunicación disponibles</td>
+<td style="text-align: left;">Registro periódico</td>
+</tr>
+<tr>
+<td style="text-align: left;">N1 — Observación</td>
+<td style="text-align: left;">Degradación de una señal</td>
+<td style="text-align: left;">Aumentar observación y registrar</td>
+</tr>
+<tr>
+<td style="text-align: left;">N2 — Sospecha</td>
+<td style="text-align: left;">Degradación de dos o más señales con movimiento</td>
+<td style="text-align: left;">Generar alerta silenciosa o encolar evento</td>
+</tr>
+<tr>
+<td style="text-align: left;">N3 — Evento confirmado</td>
+<td style="text-align: left;">Pérdida de GNSS y celular junto con anomalía adicional</td>
+<td style="text-align: left;">Registrar evento y priorizar su transmisión</td>
+</tr>
+</tbody>
+</table>
+<p>Los tiempos objetivo documentados para la respuesta son de hasta 2 segundos en observación y hasta 5 segundos para los estados de mayor prioridad.</p>
+<p>En ningún estado se contempla actuar directamente sobre el vehículo.</p>
+<h3 id="72-flujo-general">7.2 Flujo general</h3>
+<pre class="mermaid"><code>flowchart TD
+    A["N0: Normal"] --&gt; B{"¿Se degrada una señal?"}
+    B --&gt;|No| A
+    B --&gt;|Sí| C["N1: Observación"]
+    C --&gt; D{"¿Persisten varias anomalías?"}
+    D --&gt;|No| A
+    D --&gt;|Sí| E["N2: Sospecha"]
+    E --&gt; F{"¿Se cumplen los criterios de evento?"}
+    F --&gt;|No| C
+    F --&gt;|Sí| G["N3: Evento confirmado"]
+    G --&gt; H["Registrar y transmitir cuando exista conexión"]</code></pre>
+<p>El flujo ilustra la progresión conceptual de los estados. Las condiciones específicas deberán implementarse y validarse en el firmware.</p>
+<hr />
+<h2 id="8-trazabilidad-entre-necesidades-y-requisitos">8. Trazabilidad entre necesidades y requisitos</h2>
+<p>La trazabilidad permite relacionar una necesidad del usuario con un requisito técnico y con los módulos responsables de cumplirlo.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Necesidad</th>
+<th style="text-align: left;">Requisitos</th>
+<th style="text-align: left;">Módulos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Mantener funciones durante pérdida de señal</td>
+<td style="text-align: left;">F-01, F-03, F-05, E-04</td>
+<td style="text-align: left;">M3, M4, M5</td>
+</tr>
+<tr>
+<td style="text-align: left;">Reducir falsas alarmas</td>
+<td style="text-align: left;">F-02, F-03, F-08</td>
+<td style="text-align: left;">M3, M4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Conservar evidencia del incidente</td>
+<td style="text-align: left;">P-03, P-04, P-05</td>
+<td style="text-align: left;">M4, M5</td>
+</tr>
+<tr>
+<td style="text-align: left;">Facilitar la instalación</td>
+<td style="text-align: left;">U-01, U-02, M-06</td>
+<td style="text-align: left;">M1, M2</td>
+</tr>
+<tr>
+<td style="text-align: left;">No comprometer la seguridad vehicular</td>
+<td style="text-align: left;">I-02, N-05, N-06</td>
+<td style="text-align: left;">M1, M4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Mantener un costo comercial competitivo</td>
+<td style="text-align: left;">C-01, C-02, C-03</td>
+<td style="text-align: left;">Sistema completo</td>
+</tr>
+</tbody>
+</table>
+<p>Esta matriz nos permite comprender que las funciones no se encuentran aisladas.</p>
+<p>Por ejemplo, la necesidad de conservar información durante una desconexión requiere sensores, procesamiento, memoria y respaldo de alimentación.</p>
+<hr />
+<h2 id="9-riesgos-identificados">9. Riesgos identificados</h2>
+<p>Durante la revisión de la arquitectura se identificaron riesgos que pueden afectar el diseño o la validación del producto.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Riesgo</th>
+<th style="text-align: left;">Medida propuesta</th>
+<th style="text-align: left;">Prioridad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Diferencias de J1939 entre vehículos</td>
+<td style="text-align: left;">Validar en distintas marcas y modelos</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Exceso de falsas alarmas</td>
+<td style="text-align: left;">Obtener datos reales y ajustar criterios</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Módem no homologado</td>
+<td style="text-align: left;">Verificar homologación del proveedor</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Baja frecuencia real de incidentes</td>
+<td style="text-align: left;">Entrevistar a responsables de seguridad</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Expediente no aceptado por aseguradora</td>
+<td style="text-align: left;">Revisar formato con especialistas</td>
+<td style="text-align: left;">Media</td>
+</tr>
+<tr>
+<td style="text-align: left;">Consumo excesivo en reposo</td>
+<td style="text-align: left;">Medir consumo y aplicar modos de bajo consumo</td>
+<td style="text-align: left;">Media</td>
+</tr>
+</tbody>
+</table>
+<p>Uno de los riesgos principales es la validación del algoritmo de detección.</p>
+<p>Aunque la arquitectura pueda construirse, demostrar una tasa baja de falsos positivos requiere obtener datos y realizar pruebas representativas.</p>
+<hr />
+<h2 id="10-investigacion-preliminar-de-componentes-y-costos">10. Investigación preliminar de componentes y costos</h2>
+<p>En esta semana también se realizó una exploración inicial de componentes con apoyo de Perplexity.</p>
+<p>La búsqueda consideró un MVP de diez unidades, incluyendo electrónica, manufactura y recursos de desarrollo.</p>
+<h3 id="101-resultados-preliminares">10.1 Resultados preliminares</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Concepto</th>
+<th style="text-align: right;">Costo estimado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">BOM electrónico con GSM</td>
+<td style="text-align: right;">$1,810 MXN por unidad</td>
+</tr>
+<tr>
+<td style="text-align: left;">BOM ajustado sin GSM</td>
+<td style="text-align: right;">$1,531 MXN por unidad</td>
+</tr>
+<tr>
+<td style="text-align: left;">Carcasa y manufactura en lote de 10</td>
+<td style="text-align: right;">$1,170 MXN por unidad</td>
+</tr>
+<tr>
+<td style="text-align: left;">Desarrollo embebido e IA</td>
+<td style="text-align: right;">$375,000 MXN</td>
+</tr>
+<tr>
+<td style="text-align: left;">Aplicación y plataforma web durante seis meses</td>
+<td style="text-align: right;">$185,900 MXN</td>
+</tr>
+</tbody>
+</table>
+<p>La primera lista de materiales consideró ESP32-S3, módulos CAN, comunicación GSM, memoria y otros componentes.</p>
+<p>Posteriormente se detectó que esa selección no coincidía completamente con la arquitectura del PDS, especialmente en el microcontrolador y el sistema de comunicación.</p>
+<p>Por esa razón, los costos se consideraron preliminares y se planteó una revisión más detallada durante la Semana 7.</p>
+<hr />
+<h2 id="11-resultados-principales">11. Resultados principales</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Actividad</th>
+<th style="text-align: left;">Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Definición del producto</td>
+<td style="text-align: left;">Funciones y exclusiones documentadas</td>
+</tr>
+<tr>
+<td style="text-align: left;">Desarrollo del PDS</td>
+<td style="text-align: left;">Versión 1.0 con 56 requisitos</td>
+</tr>
+<tr>
+<td style="text-align: left;">Arquitectura de IA</td>
+<td style="text-align: left;">Procesamiento local mediante Edge AI</td>
+</tr>
+<tr>
+<td style="text-align: left;">Arquitectura física</td>
+<td style="text-align: left;">Siete módulos internos</td>
+</tr>
+<tr>
+<td style="text-align: left;">Interfaz vehicular</td>
+<td style="text-align: left;">SAE J1939 sobre CAN</td>
+</tr>
+<tr>
+<td style="text-align: left;">Estados de alerta</td>
+<td style="text-align: left;">Cuatro niveles definidos</td>
+</tr>
+<tr>
+<td style="text-align: left;">Trazabilidad</td>
+<td style="text-align: left;">Necesidades relacionadas con requisitos y módulos</td>
+</tr>
+<tr>
+<td style="text-align: left;">Riesgos</td>
+<td style="text-align: left;">Identificación de riesgos técnicos y comerciales</td>
+</tr>
+<tr>
+<td style="text-align: left;">Investigación de componentes</td>
+<td style="text-align: left;">Primera estimación de costos</td>
+</tr>
+</tbody>
+</table>
+<h3 id="decisiones-relevantes">Decisiones relevantes</h3>
+<p>Las principales decisiones de esta semana fueron:</p>
+<ol>
+<li>Mantener el procesamiento de anomalías dentro del dispositivo.</li>
+<li>Utilizar J1939 como interfaz principal del vehículo.</li>
+<li>Exigir una operación de solo escucha.</li>
+<li>Integrar almacenamiento local para conservar información.</li>
+<li>Establecer requisitos medibles antes de seleccionar definitivamente los componentes.</li>
+</ol>
+<hr />
+<h2 id="12-reflexion-personal">12. Reflexión personal</h2>
+<p>Esta semana fue especialmente importante para comprender cómo una propuesta tecnológica comienza a convertirse en un diseño de ingeniería.</p>
+<p>El PDS permite establecer criterios concretos para decidir qué componentes utilizar y cómo evaluar si cumplen lo esperado.</p>
+<p>Desde mi perspectiva, una de las decisiones más relevantes es que Nervik no dependa completamente de la nube.</p>
+<p>Si una de las situaciones que queremos detectar implica pérdida de comunicación, el microcontrolador debe poder continuar realizando tareas esenciales de manera local.</p>
+<p>También considero fundamental la decisión de utilizar CAN/J1939 exclusivamente para obtener información.</p>
+<p>Esto influye directamente en la arquitectura electrónica, ya que el controlador y el transceptor deberán configurarse y verificarse para evitar transmisiones hacia el vehículo.</p>
+<p>Finalmente, comprendí que los módulos electrónicos no pueden seleccionarse únicamente por su precio o disponibilidad. Es necesario relacionar cada componente con los requisitos del PDS y con las condiciones en las que se utilizará el producto.</p>
+<hr />
+<h2 id="13-conclusion">13. Conclusión</h2>
+<p>La Semana 5 permitió transformar la propuesta de Nervik en una arquitectura técnica estructurada y en un conjunto de requisitos verificables.</p>
+<p>El PDS definió las condiciones que deberán orientar el diseño, mientras que el diagrama de arquitectura permitió identificar las funciones de cada módulo y sus protocolos de comunicación.</p>
+<p>Las decisiones sobre Edge AI, almacenamiento local y lectura pasiva del bus vehicular se convirtieron en elementos centrales del producto.</p>
+<p>El siguiente paso será utilizar esta arquitectura para desarrollar y seleccionar el concepto físico del dispositivo, relacionando sus dimensiones, forma y distribución de componentes con las necesidades del usuario.</p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="../semana4/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Semana 4">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Semana 4
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../semana6/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Semana 6">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                Semana 6
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "content.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
