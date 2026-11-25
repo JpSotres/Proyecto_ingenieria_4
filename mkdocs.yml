@@ -1,4 +1,43 @@
 site_name: "Proyecto de Ingeniería 4"
+
+theme:
+  name: material
+  language: es
+  highlightjs: true
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: material/cog-outline
+  palette:
+    # Modo Claro
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+
+    # Modo Oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: light blue
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tooltips
+
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -6,7 +45,6 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
   - pymdownx.critic:
       mode: view
   - pymdownx.caret
@@ -23,22 +61,23 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
       clickable_checkbox: true
-# Use the ReadTheDocs theme
-theme:
-  name: material
-  highlightjs: true 
-  palette:
-      - scheme: default
-        primary: red
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
-  features:
-    - content.code.copy
-    - content.tooltips
 extra_css:
   - https://use.fontawesome.com/releases/v6.5.2/css/all.css
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css
-# Configuración del menú de navegación
+
 nav:
   - Inicio: index.md
+  - About me: About.md
   - Semana 1: semana1.md
   - Semana 2: semana2.md
+  - Semana 3: semana3.md
+  - Semana 4: semana4.md
+  - Semana 5: semana5.md
+  - Semana 6: semana6.md
+  - Semana 7: semana7.md

@@ -1,8 +1,21 @@
-# About me
+# Acerca de mí
 
-## Quién soy 
+<div class="grid cards" markdown>
 
-Mi nombre es Juan Pablo Sotres, estudio ingeniería mecatrónica en la IBERO Puebla y voy en quinto semestre. Tengo 19 años, vengo de Pachuca y me gusta mucho el arte, especialmente la música y el cine. Tambien me gusta ir al gimnasio y jugar futbol.
+-   <i class="fa-solid fa-user-graduate fa-lg"></i> **Perfil Académico**
 
-Lo mas importante que he hecho en mi vida es mudarme de ciudad para irme a estudiar a Puebla, donde actualmente estudio, ya que asi iba a tener mejores oportunidades.
+    ---
 
+    * **Nombre completo:** Juan Pablo Sotres Camacho
+    * **Carrera:** Ingeniería Mecatrónica
+    * **Universidad:** Universidad Iberoamericana Puebla
+
+-   <i class="fa-solid fa-envelope fa-lg"></i> **Contacto**
+
+    ---
+
+    * **Correo institucional:** [202396@iberopuebla.mx](mailto:202396@iberopuebla.mx)
+
+</div>
+
+---
