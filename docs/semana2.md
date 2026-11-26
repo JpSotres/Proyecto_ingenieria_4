@@ -711,3 +711,19 @@ Por esta razón, el concepto puede continuar a la siguiente etapa, pero las
 hipótesis de **frecuencia del dolor, preferencia por una verificación pagada y
 disposición a pagar** deberán comprobarse directamente con usuarios antes de
 invertir tiempo en construir el MVP.
+
+---
+
+## Transición al proyecto Nervik
+
+Durante esta semana desarrollé un proceso de investigación y generación de oportunidades mediante herramientas de inteligencia artificial. A través de diferentes metodologías, como el Pain-Gain Map, SCAMPER y la evaluación de deseabilidad, exploré soluciones enfocadas principalmente en el cuidado a distancia de adultos mayores.
+
+Sin embargo, este trabajo correspondía a una etapa inicial de exploración individual. Posteriormente, al reunirnos como equipo y comparar las oportunidades investigadas, decidimos cambiar el enfoque del proyecto y continuar con **Nervik**.
+
+Nervik es una propuesta de dispositivo electrónico para vehículos de transporte de carga, orientado a detectar anomalías en la ubicación y comunicación, registrar información relevante y generar alertas ante posibles situaciones de riesgo.
+
+Este cambio permitió enfocar el proyecto en una solución que combina distintas áreas de la Ingeniería Mecatrónica, como electrónica, sensores, sistemas embebidos, comunicaciones y desarrollo de software.
+
+Aunque la oportunidad inicial no fue la seleccionada, el proceso de investigación de esta semana fue útil para comprender la importancia de identificar problemas reales, analizar las necesidades de los usuarios y evaluar distintas soluciones antes de elegir una propuesta.
+
+**A partir de la Semana 3, la documentación se enfoca en el desarrollo de Nervik**, incluyendo la definición de su identidad, el análisis de mercado, los requisitos técnicos, el diseño electrónico, el prototipado y su viabilidad como producto.

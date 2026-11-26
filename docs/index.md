@@ -60,4 +60,19 @@ Bienvenido a la bitácora y documentación técnica del proyecto. Selecciona una
 
     [Ver reporte <i class="fa-solid fa-arrow-right"></i>](semana7.md)
 
+-   <i class="fa-solid fa-compass-drafting fa-lg"></i> **Semana 8**
+
+    ---
+
+    Prototipado y diseño para manufactura
+
+    [Ver reporte <i class="fa-solid fa-arrow-right"></i>](semana8.md)
+
+-   <i class="fa-solid fa-bullhorn fa-lg"></i> **Semana 9**
+
+    ---
+
+    Integración final del sistema, estrategia go-to-market y pitch.
+
+    [Ver reporte <i class="fa-solid fa-arrow-right"></i>](semana9.md)
 </div>
