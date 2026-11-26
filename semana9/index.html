@@ -1,0 +1,2435 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../semana8/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Semana 9 - Proyecto de Ingeniería 4</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#integracion-go-to-market-y-pitch" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Proyecto de Ingeniería 4" class="md-header__button md-logo" aria-label="Proyecto de Ingeniería 4" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m-2 12c-.25 0-.46-.18-.5-.42l-.37-2.65c-.63-.25-1.17-.59-1.69-.99l-2.49 1.01c-.22.08-.49 0-.61-.22l-2-3.46a.493.493 0 0 1 .12-.64l2.11-1.66L4.5 12l.07-1-2.11-1.63a.493.493 0 0 1-.12-.64l2-3.46c.12-.22.39-.31.61-.22l2.49 1c.52-.39 1.06-.73 1.69-.98l.37-2.65c.04-.24.25-.42.5-.42h4c.25 0 .46.18.5.42l.37 2.65c.63.25 1.17.59 1.69.98l2.49-1c.22-.09.49 0 .61.22l2 3.46c.13.22.07.49-.12.64L19.43 11l.07 1-.07 1 2.11 1.63c.19.15.25.42.12.64l-2 3.46c-.12.22-.39.31-.61.22l-2.49-1c-.52.39-1.06.73-1.69.98l-.37 2.65c-.04.24-.25.42-.5.42zm1.25-18-.37 2.61c-1.2.25-2.26.89-3.03 1.78L5.44 7.35l-.75 1.3L6.8 10.2a5.55 5.55 0 0 0 0 3.6l-2.12 1.56.75 1.3 2.43-1.04c.77.88 1.82 1.52 3.01 1.76l.37 2.62h1.52l.37-2.61c1.19-.25 2.24-.89 3.01-1.77l2.43 1.04.75-1.3-2.12-1.55c.4-1.17.4-2.44 0-3.61l2.11-1.55-.75-1.3-2.41 1.04a5.42 5.42 0 0 0-3.03-1.77L12.75 4z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Proyecto de Ingeniería 4
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Semana 9
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="light-blue"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../About/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About me
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../semana1/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semana 1
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../semana2/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semana 2
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../semana3/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semana 3
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../semana4/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semana 4
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../semana5/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semana 5
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../semana6/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semana 6
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../semana7/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semana 7
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../semana8/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semana 8
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Semana 9
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Proyecto de Ingeniería 4" class="md-nav__button md-logo" aria-label="Proyecto de Ingeniería 4" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m-2 12c-.25 0-.46-.18-.5-.42l-.37-2.65c-.63-.25-1.17-.59-1.69-.99l-2.49 1.01c-.22.08-.49 0-.61-.22l-2-3.46a.493.493 0 0 1 .12-.64l2.11-1.66L4.5 12l.07-1-2.11-1.63a.493.493 0 0 1-.12-.64l2-3.46c.12-.22.39-.31.61-.22l2.49 1c.52-.39 1.06-.73 1.69-.98l.37-2.65c.04-.24.25-.42.5-.42h4c.25 0 .46.18.5.42l.37 2.65c.63.25 1.17.59 1.69.98l2.49-1c.22-.09.49 0 .61.22l2 3.46c.13.22.07.49-.12.64L19.43 11l.07 1-.07 1 2.11 1.63c.19.15.25.42.12.64l-2 3.46c-.12.22-.39.31-.61.22l-2.49-1c-.52.39-1.06.73-1.69.98l-.37 2.65c-.04.24-.25.42-.5.42zm1.25-18-.37 2.61c-1.2.25-2.26.89-3.03 1.78L5.44 7.35l-.75 1.3L6.8 10.2a5.55 5.55 0 0 0 0 3.6l-2.12 1.56.75 1.3 2.43-1.04c.77.88 1.82 1.52 3.01 1.76l.37 2.62h1.52l.37-2.61c1.19-.25 2.24-.89 3.01-1.77l2.43 1.04.75-1.3-2.12-1.55c.4-1.17.4-2.44 0-3.61l2.11-1.55-.75-1.3-2.41 1.04a5.42 5.42 0 0 0-3.03-1.77L12.75 4z"/></svg>
+
+    </a>
+    Proyecto de Ingeniería 4
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../About/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About me
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semana1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semana2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semana3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semana4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semana5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semana6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semana7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semana8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 9
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semana 9
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Introducción
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-integracion-de-los-elementos-de-nervik" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Integración de los elementos de Nervik
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Integración de los elementos de Nervik">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-componentes-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Componentes del sistema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-relacion-entre-hardware-y-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Relación entre hardware y software
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-desarrollo-de-la-pcb-para-la-demostracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Desarrollo de la PCB para la demostración
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Desarrollo de la PCB para la demostración">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-diseno-electronico-realizado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Diseño electrónico realizado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-funcion-de-la-pcb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Función de la PCB
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-relacion-con-la-version-para-camiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Relación con la versión para camiones
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-integracion-con-la-carcasa-cuna-guardian" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Integración con la carcasa Cuña Guardián
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Integración con la carcasa Cuña Guardián">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-relacion-con-la-electronica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Relación con la electrónica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-experiencia-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Experiencia de usuario
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-integracion-de-la-aplicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Integración de la aplicación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Integración de la aplicación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-informacion-de-la-aplicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Información de la aplicación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-evaluacion-de-la-integracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Evaluación de la integración
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Evaluación de la integración">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-aspectos-identificados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Aspectos identificados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-estado-de-la-integracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Estado de la integración
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-modelo-de-negocio-y-lanzamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Modelo de negocio y lanzamiento
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Modelo de negocio y lanzamiento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-modelo-comercial-propuesto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Modelo comercial propuesto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-analisis-economico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Análisis económico
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-estrategia-de-lanzamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Estrategia de lanzamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-consideraciones-para-una-futura-comercializacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Consideraciones para una futura comercialización
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-preparacion-del-pitch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Preparación del pitch
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Preparación del pitch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-mensaje-central" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 Mensaje central
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-guion-del-pitch-de-nervik" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Guion del pitch de Nervik
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Guion del pitch de Nervik">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parte-1-impacto-y-problema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 1 — Impacto y problema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-2-solucion-y-diferenciacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 2 — Solución y diferenciación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-3-mercado-y-modelo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 3 — Mercado y modelo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-4-avance-y-validacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 4 — Avance y validación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-5-equipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 5 — Equipo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-6-peticion-y-cierre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 6 — Petición y cierre
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-presentacion-del-prototipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Presentación del prototipo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Presentación del prototipo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-elementos-de-la-demostracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 Elementos de la demostración
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-secuencia-de-presentacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 Secuencia de presentación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-alcance-de-las-pruebas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 Alcance de las pruebas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-relacion-entre-el-prototipo-y-el-producto-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Relación entre el prototipo y el producto final
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-resultados-de-la-semana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Resultados de la semana
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusión
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Introducción
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-integracion-de-los-elementos-de-nervik" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Integración de los elementos de Nervik
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Integración de los elementos de Nervik">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-componentes-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Componentes del sistema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-relacion-entre-hardware-y-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Relación entre hardware y software
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-desarrollo-de-la-pcb-para-la-demostracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Desarrollo de la PCB para la demostración
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Desarrollo de la PCB para la demostración">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-diseno-electronico-realizado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Diseño electrónico realizado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-funcion-de-la-pcb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Función de la PCB
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-relacion-con-la-version-para-camiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Relación con la versión para camiones
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-integracion-con-la-carcasa-cuna-guardian" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Integración con la carcasa Cuña Guardián
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Integración con la carcasa Cuña Guardián">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-relacion-con-la-electronica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Relación con la electrónica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-experiencia-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Experiencia de usuario
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-integracion-de-la-aplicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Integración de la aplicación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Integración de la aplicación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-informacion-de-la-aplicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Información de la aplicación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-evaluacion-de-la-integracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Evaluación de la integración
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Evaluación de la integración">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-aspectos-identificados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Aspectos identificados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-estado-de-la-integracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Estado de la integración
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-modelo-de-negocio-y-lanzamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Modelo de negocio y lanzamiento
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Modelo de negocio y lanzamiento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-modelo-comercial-propuesto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Modelo comercial propuesto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-analisis-economico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Análisis económico
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-estrategia-de-lanzamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Estrategia de lanzamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-consideraciones-para-una-futura-comercializacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Consideraciones para una futura comercialización
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-preparacion-del-pitch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Preparación del pitch
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Preparación del pitch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-mensaje-central" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 Mensaje central
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-guion-del-pitch-de-nervik" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Guion del pitch de Nervik
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Guion del pitch de Nervik">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parte-1-impacto-y-problema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 1 — Impacto y problema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-2-solucion-y-diferenciacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 2 — Solución y diferenciación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-3-mercado-y-modelo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 3 — Mercado y modelo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-4-avance-y-validacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 4 — Avance y validación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-5-equipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 5 — Equipo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-6-peticion-y-cierre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 6 — Petición y cierre
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-presentacion-del-prototipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Presentación del prototipo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Presentación del prototipo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-elementos-de-la-demostracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 Elementos de la demostración
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-secuencia-de-presentacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 Secuencia de presentación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-alcance-de-las-pruebas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 Alcance de las pruebas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-relacion-entre-el-prototipo-y-el-producto-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Relación entre el prototipo y el producto final
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-resultados-de-la-semana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Resultados de la semana
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusión
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="integracion-go-to-market-y-pitch">Integración, go-to-market y pitch</h1>
+<div class="admonition info">
+<p class="admonition-title">Objetivo de la semana</p>
+<p>Integrar los avances del desarrollo de Nervik, relacionando el diseño electrónico con la aplicación, la carcasa y el modelo de negocio, para presentar una propuesta de producto que responda al problema identificado durante el semestre.</p>
+</div>
+<hr />
+<h2 id="1-introduccion">1. Introducción</h2>
+<p>Durante las semanas anteriores desarrollamos diferentes aspectos de Nervik: la investigación del problema, el análisis de mercado, la definición de requisitos, la selección del concepto físico, el estudio de viabilidad y el diseño electrónico.</p>
+<p>En esta última etapa nos enfocamos en reunir esos elementos para mostrar cómo se relacionan entre sí y cómo podrían funcionar como un producto completo.</p>
+<p>Uno de los principales retos fue conectar el desarrollo técnico con la propuesta de valor. No bastaba con presentar una PCB, una carcasa o una aplicación de manera independiente; era necesario explicar qué función cumple cada elemento y cómo contribuye al objetivo de Nervik.</p>
+<p>También trabajamos en la preparación de la presentación final, especialmente en la construcción de un pitch que comunicara el problema y la solución sin depender de explicaciones demasiado técnicas.</p>
+<hr />
+<h2 id="2-integracion-de-los-elementos-de-nervik">2. Integración de los elementos de Nervik</h2>
+<p>Nervik es un sistema orientado a detectar y registrar condiciones anómalas relacionadas con la comunicación y ubicación de vehículos de transporte de carga.</p>
+<p>Su arquitectura contempla la integración de sensores, procesamiento local, comunicación, almacenamiento y una aplicación de monitoreo.</p>
+<p>Durante el desarrollo del proyecto trabajamos en diferentes partes de esta arquitectura.</p>
+<h3 id="21-componentes-del-sistema">2.1 Componentes del sistema</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Elemento</th>
+<th style="text-align: left;">Desarrollo dentro del proyecto</th>
+<th style="text-align: left;">Función</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">PCB</td>
+<td style="text-align: left;">Diseño electrónico desarrollado en KiCad</td>
+<td style="text-align: left;">Integrar el microcontrolador y los circuitos</td>
+</tr>
+<tr>
+<td style="text-align: left;">Microcontrolador</td>
+<td style="text-align: left;">Raspberry Pi Pico W</td>
+<td style="text-align: left;">Ejecutar el firmware y controlar periféricos</td>
+</tr>
+<tr>
+<td style="text-align: left;">Indicadores</td>
+<td style="text-align: left;">Tres LED</td>
+<td style="text-align: left;">Representar los estados del dispositivo</td>
+</tr>
+<tr>
+<td style="text-align: left;">Alerta audible</td>
+<td style="text-align: left;">Buzzer</td>
+<td style="text-align: left;">Señalizar un evento de prueba o advertencia</td>
+</tr>
+<tr>
+<td style="text-align: left;">Controles</td>
+<td style="text-align: left;">Botones de prueba y reinicio</td>
+<td style="text-align: left;">Permitir interacción con el dispositivo</td>
+</tr>
+<tr>
+<td style="text-align: left;">Carcasa</td>
+<td style="text-align: left;">Concepto Cuña Guardián</td>
+<td style="text-align: left;">Proteger y organizar los componentes</td>
+</tr>
+<tr>
+<td style="text-align: left;">Aplicación</td>
+<td style="text-align: left;">Interfaz desarrollada por el equipo</td>
+<td style="text-align: left;">Visualizar información y alertas</td>
+</tr>
+<tr>
+<td style="text-align: left;">Página web</td>
+<td style="text-align: left;">Presentación digital de Nervik</td>
+<td style="text-align: left;">Comunicar el producto y su propuesta de valor</td>
+</tr>
+</tbody>
+</table>
+<p>Estos elementos representan diferentes partes de un mismo sistema.</p>
+<p>El desarrollo de cada uno también permitió identificar las necesidades de integración que deben resolverse antes de utilizar Nervik en condiciones reales.</p>
+<h3 id="22-relacion-entre-hardware-y-software">2.2 Relación entre hardware y software</h3>
+<p>La Raspberry Pi Pico W es el elemento central del prototipo electrónico.</p>
+<p>Su función es ejecutar el firmware, recibir las entradas disponibles y controlar los indicadores y las alertas.</p>
+<p>La arquitectura de Nervik también contempla el envío de información mediante Wi-Fi hacia un servidor, para que posteriormente pueda visualizarse en la aplicación.</p>
+<p>El funcionamiento completo depende de que las señales puedan pasar correctamente entre cada etapa.</p>
+<pre class="mermaid"><code>flowchart TD
+    A["Sensores y entradas de prueba"] --&gt; B["Raspberry Pi Pico W"]
+    B --&gt; C["Procesamiento de eventos"]
+    C --&gt; D["LED y buzzer"]
+    C --&gt; E["Comunicación Wi-Fi"]
+    E --&gt; F["Servidor"]
+    F --&gt; G["Aplicación Nervik"]
+    G --&gt; H["Usuario"]</code></pre>
+<p><em>Figura 1. Arquitectura de integración del prototipo de Nervik.</em></p>
+<p>Este diagrama representa la relación prevista entre los componentes electrónicos y digitales del sistema.</p>
+<hr />
+<h2 id="3-desarrollo-de-la-pcb-para-la-demostracion">3. Desarrollo de la PCB para la demostración</h2>
+<p>Una de las decisiones más importantes del desarrollo fue adaptar el diseño electrónico a las condiciones disponibles para la presentación final.</p>
+<p>Inicialmente trabajamos en una arquitectura de PCB que contemplaba los elementos necesarios para una futura instalación en camiones.</p>
+<p>Esta versión incluía alimentación automotriz, comunicación celular, GNSS, IMU y lectura del bus CAN/J1939.</p>
+<p>Sin embargo, durante la presentación académica no contaremos con un camión para conectar el dispositivo y reproducir sus condiciones reales de operación.</p>
+<p>Por esta razón, desarrollamos una PCB específica para la demostración, alimentada mediante una fuente regulada de 5 V.</p>
+<p>La intención fue disponer de una placa que permitiera representar físicamente el funcionamiento de Nervik y probar sus controles e indicadores sin depender de la instalación en un vehículo.</p>
+<h3 id="31-diseno-electronico-realizado">3.1 Diseño electrónico realizado</h3>
+<p>La PCB de demostración incorpora:</p>
+<ul>
+<li>Raspberry Pi Pico W.</li>
+<li>Entrada de alimentación de 5 V.</li>
+<li>Interruptor.</li>
+<li>Tres LED indicadores.</li>
+<li>Buzzer y transistor de control.</li>
+<li>Resistencias, capacitores y componentes auxiliares.</li>
+<li>Botón de prueba.</li>
+<li>Botón de reinicio.</li>
+<li>Orificios para fijación dentro de la carcasa.</li>
+</ul>
+<p>La distribución de los componentes y las pistas se desarrolló utilizando KiCad.</p>
+<p><img alt="PCB de demostración de Nervik" src="../recursos/imgs/pcb-prototipo.jpeg" /></p>
+<p><em>Figura 2. Diseño de la PCB de demostración desarrollado en KiCad.</em></p>
+<h3 id="32-funcion-de-la-pcb">3.2 Función de la PCB</h3>
+<p>El prototipo utiliza la Raspberry Pi Pico W como unidad de procesamiento.</p>
+<p>Los LED permiten representar diferentes estados del sistema, mientras que el buzzer proporciona una alerta audible.</p>
+<p>El botón de prueba permite generar una interacción controlada durante la demostración y el botón de reinicio permite reiniciar el microcontrolador.</p>
+<p>La alimentación de 5 V evita la necesidad de conectar la placa directamente a un sistema eléctrico automotriz.</p>
+<h3 id="33-relacion-con-la-version-para-camiones">3.3 Relación con la versión para camiones</h3>
+<p>La PCB de demostración y la versión automotriz responden a dos necesidades diferentes.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Característica</th>
+<th style="text-align: left;">Prototipo de demostración</th>
+<th style="text-align: left;">Versión para camiones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Alimentación</td>
+<td style="text-align: left;">Fuente regulada de 5 V</td>
+<td style="text-align: left;">Alimentación vehicular de 12/24 V</td>
+</tr>
+<tr>
+<td style="text-align: left;">Procesamiento</td>
+<td style="text-align: left;">Raspberry Pi Pico W</td>
+<td style="text-align: left;">Arquitectura de procesamiento integrada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Indicadores</td>
+<td style="text-align: left;">Tres LED</td>
+<td style="text-align: left;">Indicadores de estado</td>
+</tr>
+<tr>
+<td style="text-align: left;">Alerta audible</td>
+<td style="text-align: left;">Buzzer</td>
+<td style="text-align: left;">Sistema de alertas</td>
+</tr>
+<tr>
+<td style="text-align: left;">Comunicación</td>
+<td style="text-align: left;">Wi-Fi</td>
+<td style="text-align: left;">Comunicación celular LTE</td>
+</tr>
+<tr>
+<td style="text-align: left;">GNSS e IMU</td>
+<td style="text-align: left;">Integración mediante módulos externos</td>
+<td style="text-align: left;">Integración prevista en PCB</td>
+</tr>
+<tr>
+<td style="text-align: left;">CAN/J1939</td>
+<td style="text-align: left;">No integrado en esta placa</td>
+<td style="text-align: left;">Lectura de datos del vehículo</td>
+</tr>
+<tr>
+<td style="text-align: left;">Batería</td>
+<td style="text-align: left;">No integrada</td>
+<td style="text-align: left;">Respaldo energético previsto</td>
+</tr>
+</tbody>
+</table>
+<p>La decisión de separar ambas versiones permitió continuar desarrollando la electrónica del producto sin depender de un vehículo real para mostrar el prototipo académico.</p>
+<hr />
+<h2 id="4-integracion-con-la-carcasa-cuna-guardian">4. Integración con la carcasa Cuña Guardián</h2>
+<p>Durante la Semana 6 seleccionamos el concepto Cuña Guardián como propuesta física para Nervik.</p>
+<p>Su diseño se caracteriza por una geometría compacta, superficies biseladas y una distribución pensada para integrar los elementos electrónicos.</p>
+<p>La carcasa cumple una función importante porque convierte el conjunto de componentes en un dispositivo físico que puede instalarse y manipularse como un producto.</p>
+<h3 id="41-relacion-con-la-electronica">4.1 Relación con la electrónica</h3>
+<p>El diseño de la carcasa debe considerar:</p>
+<ul>
+<li>Dimensiones de la PCB.</li>
+<li>Ubicación de los indicadores LED.</li>
+<li>Espacio para el buzzer.</li>
+<li>Acceso a los botones.</li>
+<li>Entrada de alimentación.</li>
+<li>Puntos de montaje.</li>
+<li>Espacio disponible para los componentes.</li>
+</ul>
+<p>La selección de Cuña Guardián permitió definir una dirección de diseño para el producto.</p>
+<p>La PCB desarrollada para la demostración también permite estudiar la distribución de los componentes antes de avanzar hacia una versión electrónica más completa.</p>
+<h3 id="42-experiencia-de-usuario">4.2 Experiencia de usuario</h3>
+<p>La interfaz física se mantiene sencilla.</p>
+<p>Los tres LED permiten identificar estados relevantes sin necesidad de consultar constantemente una pantalla.</p>
+<p>Los botones proporcionan una manera directa de interactuar con el dispositivo, especialmente durante el reinicio y las pruebas.</p>
+<p>La aplicación complementa esta interfaz al permitir presentar información más detallada.</p>
+<hr />
+<h2 id="5-integracion-de-la-aplicacion">5. Integración de la aplicación</h2>
+<p>Otro elemento importante de Nervik es la aplicación desarrollada por el equipo.</p>
+<p>Su propósito es que una persona encargada del monitoreo pueda consultar el estado de los dispositivos y reconocer situaciones que requieren atención.</p>
+<p>Durante la definición de la interfaz se priorizaron dos situaciones:</p>
+<p><strong>Funcionamiento normal:</strong> consultar el estado de la flota e identificar las unidades que no presentan alertas.</p>
+<p><strong>Situación de riesgo:</strong> reconocer una unidad con una condición anómala y acceder a información relacionada con el evento.</p>
+<h3 id="51-informacion-de-la-aplicacion">5.1 Información de la aplicación</h3>
+<p>La interfaz propuesta contempla:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Información</th>
+<th style="text-align: left;">Utilidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Estado general de la flota</td>
+<td style="text-align: left;">Conocer la situación de las unidades</td>
+</tr>
+<tr>
+<td style="text-align: left;">Identificación del vehículo</td>
+<td style="text-align: left;">Reconocer qué unidad requiere atención</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nivel de alerta</td>
+<td style="text-align: left;">Distinguir la prioridad de un evento</td>
+</tr>
+<tr>
+<td style="text-align: left;">Última ubicación válida</td>
+<td style="text-align: left;">Consultar información disponible</td>
+</tr>
+<tr>
+<td style="text-align: left;">Estado de comunicación</td>
+<td style="text-align: left;">Identificar interrupciones</td>
+</tr>
+<tr>
+<td style="text-align: left;">Historial de eventos</td>
+<td style="text-align: left;">Revisar lo ocurrido anteriormente</td>
+</tr>
+</tbody>
+</table>
+<p>El objetivo es presentar la información de manera clara para facilitar la interpretación de una alerta.</p>
+<p>La aplicación y el hardware forman parte del mismo concepto, aunque la comunicación real entre ambos debe comprobarse mediante pruebas de integración.</p>
+<hr />
+<h2 id="6-evaluacion-de-la-integracion">6. Evaluación de la integración</h2>
+<p>Durante el desarrollo electrónico identificamos que integrar distintos componentes requiere revisar tanto las conexiones físicas como la interpretación de la información.</p>
+<p>En KiCad utilizamos herramientas de comprobación eléctrica para identificar problemas dentro del esquemático.</p>
+<p>Uno de los casos que enfrenté fue la importación de la biblioteca de la IMU LSM6DSOXTR.</p>
+<p>El símbolo tenía propiedades eléctricas incorrectas en dos terminales GND, lo que generaba errores durante la comprobación ERC.</p>
+<p>Después de corregir las propiedades, el número de errores reportados disminuyó de 98 a 96.</p>
+<p>Este proceso permitió comprender que el diseño electrónico también requiere validar las bibliotecas y no únicamente conectar componentes.</p>
+<h3 id="61-aspectos-identificados">6.1 Aspectos identificados</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Área</th>
+<th style="text-align: left;">Aspecto relevante</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Alimentación</td>
+<td style="text-align: left;">Utilizar tensiones compatibles con los componentes</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sensores</td>
+<td style="text-align: left;">Verificar conexiones y protocolos</td>
+</tr>
+<tr>
+<td style="text-align: left;">Comunicación</td>
+<td style="text-align: left;">Confirmar que los mensajes lleguen correctamente</td>
+</tr>
+<tr>
+<td style="text-align: left;">Procesamiento</td>
+<td style="text-align: left;">Interpretar entradas y generar estados</td>
+</tr>
+<tr>
+<td style="text-align: left;">Interfaz física</td>
+<td style="text-align: left;">Comprobar la respuesta de indicadores y botones</td>
+</tr>
+<tr>
+<td style="text-align: left;">Aplicación</td>
+<td style="text-align: left;">Mostrar información consistente con el dispositivo</td>
+</tr>
+</tbody>
+</table>
+<h3 id="62-estado-de-la-integracion">6.2 Estado de la integración</h3>
+<p>El desarrollo ha permitido definir la arquitectura y avanzar en los componentes electrónicos y digitales de Nervik.</p>
+<p>Sin embargo, es importante distinguir el diseño de una función de su validación.</p>
+<p>La comprobación de alertas, comunicaciones y funcionamiento continuo requiere registrar las pruebas realizadas sobre el prototipo físico.</p>
+<p>Esto es especialmente importante para las funciones de detección de interferencias y almacenamiento local, ya que su desempeño deberá demostrarse en condiciones controladas.</p>
+<hr />
+<h2 id="7-modelo-de-negocio-y-lanzamiento">7. Modelo de negocio y lanzamiento</h2>
+<p>El desarrollo comercial de Nervik se relaciona con la necesidad de ofrecer una solución útil para las empresas de transporte de carga.</p>
+<p>Durante la Semana 4 identificamos como segmento inicial a las empresas mexicanas con flotas medianas que operan en corredores de riesgo.</p>
+<p>Nuestra propuesta de valor consiste en conservar información que pueda ayudar a comprender lo ocurrido cuando se interrumpe la comunicación de un vehículo.</p>
+<h3 id="71-modelo-comercial-propuesto">7.1 Modelo comercial propuesto</h3>
+<p>El equipo seleccionó un esquema de venta de hardware acompañado por una suscripción mensual.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Concepto</th>
+<th style="text-align: right;">Precio propuesto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Dispositivo instalado</td>
+<td style="text-align: right;">$1,800 MXN</td>
+</tr>
+<tr>
+<td style="text-align: left;">Suscripción mensual</td>
+<td style="text-align: right;">$300 MXN</td>
+</tr>
+<tr>
+<td style="text-align: left;">Suscripción anual</td>
+<td style="text-align: right;">$3,600 MXN</td>
+</tr>
+</tbody>
+</table>
+<p>La suscripción se relaciona con la disponibilidad de servicios de monitoreo, almacenamiento y consulta de información.</p>
+<p>Estos precios corresponden al modelo económico propuesto durante la Semana 7 y todavía requieren validación con clientes.</p>
+<h3 id="72-analisis-economico">7.2 Análisis económico</h3>
+<p>El escenario de fabricación estudiado durante la Semana 7 estimó un costo de aproximadamente $2,095 MXN por unidad en un lote de 100 piezas.</p>
+<p>Esto representa una diferencia inicial de $295 MXN entre el precio propuesto de instalación y el costo estimado por unidad.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Concepto</th>
+<th style="text-align: right;">Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Precio del dispositivo</td>
+<td style="text-align: right;">$1,800 MXN</td>
+</tr>
+<tr>
+<td style="text-align: left;">Costo estimado</td>
+<td style="text-align: right;">$2,095 MXN</td>
+</tr>
+<tr>
+<td style="text-align: left;">Diferencia inicial</td>
+<td style="text-align: right;">−$295 MXN</td>
+</tr>
+</tbody>
+</table>
+<p>Por lo tanto, el modelo comercial depende de mantener ingresos recurrentes y controlar los costos operativos.</p>
+<p>La investigación también mostró que el proyecto necesitaría una inversión inicial antes de generar un flujo de caja positivo.</p>
+<h3 id="73-estrategia-de-lanzamiento">7.3 Estrategia de lanzamiento</h3>
+<p>La propuesta comercial se orienta inicialmente a empresas de transporte que ya utilizan sistemas de rastreo y monitoreo.</p>
+<p>Nervik no busca necesariamente reemplazar esas herramientas, sino agregar una función complementaria de registro y análisis local.</p>
+<p>La página de lanzamiento permite presentar la propuesta de valor, explicar las características del producto y establecer contacto con posibles clientes.</p>
+<p>El interés comercial y la disposición de pago deberán comprobarse mediante interacción real con empresas del sector.</p>
+<hr />
+<h2 id="8-consideraciones-para-una-futura-comercializacion">8. Consideraciones para una futura comercialización</h2>
+<p>El desarrollo de un producto electrónico para transporte de carga también implica requisitos técnicos y legales.</p>
+<p>En el caso de Nervik, estos aspectos son relevantes porque la arquitectura completa considera comunicación celular, almacenamiento de información de ubicación y conexión con sistemas del vehículo.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Aspecto</th>
+<th style="text-align: left;">Relación con Nervik</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Homologación de radio</td>
+<td style="text-align: left;">Comunicación celular y otros sistemas inalámbricos</td>
+</tr>
+<tr>
+<td style="text-align: left;">Protección de datos</td>
+<td style="text-align: left;">Almacenamiento de ubicación e información de usuarios</td>
+</tr>
+<tr>
+<td style="text-align: left;">Seguridad eléctrica</td>
+<td style="text-align: left;">Alimentación y protección de componentes</td>
+</tr>
+<tr>
+<td style="text-align: left;">Normativa del producto</td>
+<td style="text-align: left;">Requisitos aplicables a su comercialización</td>
+</tr>
+<tr>
+<td style="text-align: left;">Propiedad intelectual</td>
+<td style="text-align: left;">Uso de la marca y revisión de antecedentes</td>
+</tr>
+<tr>
+<td style="text-align: left;">Licencias de software</td>
+<td style="text-align: left;">Uso de bibliotecas y herramientas de desarrollo</td>
+</tr>
+<tr>
+<td style="text-align: left;">Reparabilidad</td>
+<td style="text-align: left;">Mantenimiento y sustitución de componentes</td>
+</tr>
+</tbody>
+</table>
+<p>El prototipo académico permite desarrollar y demostrar funciones, pero no sustituye las validaciones necesarias para instalar el producto en un vehículo real.</p>
+<p>Estas consideraciones deberán revisarse durante una etapa posterior de desarrollo.</p>
+<hr />
+<h2 id="9-preparacion-del-pitch">9. Preparación del pitch</h2>
+<p>Una de las actividades más importantes de la semana fue estructurar la presentación final de Nervik.</p>
+<p>Para ello retomamos la información desarrollada durante el semestre:</p>
+<ul>
+<li>El problema identificado en el transporte de carga.</li>
+<li>La propuesta de valor.</li>
+<li>El segmento inicial de clientes.</li>
+<li>La arquitectura del producto.</li>
+<li>El avance del diseño electrónico.</li>
+<li>El modelo de negocio.</li>
+<li>Las etapas pendientes de validación.</li>
+</ul>
+<p>El principal reto fue sintetizar toda esta información y comunicarla de una manera que pudiera comprenderse sin conocimientos especializados en electrónica.</p>
+<p>La decisión fue comenzar con una situación que representara el problema del usuario, presentar después la solución y cerrar con la siguiente etapa del proyecto.</p>
+<h3 id="91-mensaje-central">9.1 Mensaje central</h3>
+<p><strong>Cuando se pierde la comunicación, Nervik busca conservar la información que permite entender lo ocurrido.</strong></p>
+<p>Este mensaje resume el problema y la función principal que diferencia nuestra propuesta.</p>
+<hr />
+<h2 id="10-guion-del-pitch-de-nervik">10. Guion del pitch de Nervik</h2>
+<h3 id="parte-1-impacto-y-problema">Parte 1 — Impacto y problema</h3>
+<p>Imaginemos a una responsable de seguridad que monitorea una flota de transporte de carga. Una de sus unidades desaparece del mapa. Durante los siguientes minutos no sabe si atravesó una zona sin cobertura, si ocurrió una falla técnica o si enfrenta una situación de riesgo.</p>
+<p>La empresa tiene un sistema de rastreo, pero precisamente cuando pierde comunicación es cuando más necesita información.</p>
+<h3 id="parte-2-solucion-y-diferenciacion">Parte 2 — Solución y diferenciación</h3>
+<p>Para atender ese problema desarrollamos Nervik, un dispositivo que busca identificar anomalías y conservar registros locales aun cuando la conexión externa se interrumpa.</p>
+<p>Nuestra propuesta combina información de posicionamiento, comunicación y datos del vehículo. A diferencia de depender exclusivamente del monitoreo remoto, Nervik plantea continuar analizando y registrando eventos dentro del propio dispositivo.</p>
+<p>En la demostración mostraremos el funcionamiento alcanzado por nuestro prototipo.</p>
+<h3 id="parte-3-mercado-y-modelo">Parte 3 — Mercado y modelo</h3>
+<p>Nos dirigimos inicialmente a empresas mexicanas de transporte de carga con flotas medianas, especialmente aquellas que operan por corredores de riesgo.</p>
+<p>En nuestro análisis de mercado trabajamos con un escenario de 46 mil unidades atendibles, basado en información sectorial y supuestos de segmentación.</p>
+<p>El modelo comercial propuesto combina un precio de instalación de mil ochocientos pesos y una suscripción mensual de trescientos pesos por unidad.</p>
+<h3 id="parte-4-avance-y-validacion">Parte 4 — Avance y validación</h3>
+<p>Durante el semestre definimos los requisitos del producto, desarrollamos su arquitectura y seleccionamos el concepto físico Cuña Guardián.</p>
+<p>También diseñamos una PCB de demostración alimentada a cinco voltios, con Raspberry Pi Pico W, indicadores, buzzer y controles.</p>
+<p>La versión automotriz incorpora otras funciones que todavía requieren validación, entre ellas la interfaz CAN/J1939, el respaldo energético y la comunicación LTE.</p>
+<p>Nuestro siguiente reto es comprobar el desempeño completo del sistema en condiciones representativas.</p>
+<h3 id="parte-5-equipo">Parte 5 — Equipo</h3>
+<p>Somos un equipo de estudiantes de ingeniería que ha trabajado en el diseño electrónico, la carcasa, la aplicación y la documentación del producto, integrando distintas áreas para desarrollar Nervik.</p>
+<h3 id="parte-6-peticion-y-cierre">Parte 6 — Petición y cierre</h3>
+<p>El siguiente paso que proponemos es realizar un piloto con empresas transportistas para evaluar el registro de eventos, la integración con sistemas de monitoreo y su utilidad durante incidentes.</p>
+<p>Porque cuando una unidad deja de comunicarse, también importa saber qué ocurrió antes, durante y después de la interrupción.</p>
+<hr />
+<h2 id="11-presentacion-del-prototipo">11. Presentación del prototipo</h2>
+<p>La demostración del producto permite complementar el pitch con los elementos físicos y digitales desarrollados durante el semestre.</p>
+<p>Mientras el pitch explica el problema y el valor comercial, el prototipo muestra la implementación técnica que hemos trabajado.</p>
+<h3 id="111-elementos-de-la-demostracion">11.1 Elementos de la demostración</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Elemento</th>
+<th style="text-align: left;">Qué permite presentar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">PCB de demostración</td>
+<td style="text-align: left;">Diseño electrónico y distribución de componentes</td>
+</tr>
+<tr>
+<td style="text-align: left;">Raspberry Pi Pico W</td>
+<td style="text-align: left;">Unidad de procesamiento</td>
+</tr>
+<tr>
+<td style="text-align: left;">LED</td>
+<td style="text-align: left;">Estados visuales</td>
+</tr>
+<tr>
+<td style="text-align: left;">Buzzer</td>
+<td style="text-align: left;">Alertas audibles</td>
+</tr>
+<tr>
+<td style="text-align: left;">Botones</td>
+<td style="text-align: left;">Interacción y prueba</td>
+</tr>
+<tr>
+<td style="text-align: left;">Carcasa</td>
+<td style="text-align: left;">Presentación física del dispositivo</td>
+</tr>
+<tr>
+<td style="text-align: left;">Aplicación</td>
+<td style="text-align: left;">Visualización del sistema</td>
+</tr>
+<tr>
+<td style="text-align: left;">Página web</td>
+<td style="text-align: left;">Propuesta de valor y modelo comercial</td>
+</tr>
+</tbody>
+</table>
+<h3 id="112-secuencia-de-presentacion">11.2 Secuencia de presentación</h3>
+<p>La presentación del prototipo se organizó alrededor de una situación de funcionamiento normal y una condición de alerta.</p>
+<p>Primero se muestra el dispositivo y se explica el significado de sus indicadores.</p>
+<p>Después se presenta la interacción mediante el botón de prueba, que permite representar una condición anómala sin necesidad de provocar un incidente real.</p>
+<p>Finalmente se muestra cómo la información correspondiente puede representarse en la aplicación, de acuerdo con las funciones que se hayan integrado y comprobado.</p>
+<p>La demostración permite explicar el alcance actual de Nervik y las funciones que se incorporarían en una versión automotriz completa.</p>
+<h3 id="113-alcance-de-las-pruebas">11.3 Alcance de las pruebas</h3>
+<p>La condición generada mediante el botón corresponde a una prueba controlada del sistema.</p>
+<p>No debe confundirse con una detección comprobada de inhibición de señal.</p>
+<p>Del mismo modo, la integración de los sensores y la comunicación debe evaluarse con registros reales para confirmar su desempeño.</p>
+<p>Esta distinción permite presentar el proyecto de manera técnica y transparente.</p>
+<hr />
+<h2 id="12-relacion-entre-el-prototipo-y-el-producto-final">12. Relación entre el prototipo y el producto final</h2>
+<p>La presentación final muestra una etapa del desarrollo de Nervik, no un producto comercial completamente validado.</p>
+<p>El prototipo permite representar las funciones de procesamiento, interfaz física y respuesta ante eventos.</p>
+<p>La arquitectura completa contempla capacidades adicionales necesarias para una futura implementación en vehículos de transporte de carga.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Etapa</th>
+<th style="text-align: left;">Características</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Prototipo académico</td>
+<td style="text-align: left;">PCB de 5 V, Pico W, indicadores, botones y buzzer</td>
+</tr>
+<tr>
+<td style="text-align: left;">Integración funcional</td>
+<td style="text-align: left;">Sensores, firmware y comunicación con aplicación</td>
+</tr>
+<tr>
+<td style="text-align: left;">PCB automotriz</td>
+<td style="text-align: left;">GNSS, LTE, CAN/J1939 y alimentación vehicular</td>
+</tr>
+<tr>
+<td style="text-align: left;">Validación en campo</td>
+<td style="text-align: left;">Pruebas reales de desempeño y fiabilidad</td>
+</tr>
+<tr>
+<td style="text-align: left;">Producto comercial</td>
+<td style="text-align: left;">Manufactura, certificaciones y soporte</td>
+</tr>
+</tbody>
+</table>
+<p>Esta evolución permite comprender cómo un prototipo desarrollado en un entorno universitario puede servir como punto de partida para un producto más completo.</p>
+<hr />
+<h2 id="13-resultados-de-la-semana">13. Resultados de la semana</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Área</th>
+<th style="text-align: left;">Resultado del desarrollo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Arquitectura</td>
+<td style="text-align: left;">Relación entre hardware, procesamiento y aplicación</td>
+</tr>
+<tr>
+<td style="text-align: left;">PCB</td>
+<td style="text-align: left;">Diseño específico para demostración de laboratorio</td>
+</tr>
+<tr>
+<td style="text-align: left;">Carcasa</td>
+<td style="text-align: left;">Concepto Cuña Guardián</td>
+</tr>
+<tr>
+<td style="text-align: left;">Interfaz física</td>
+<td style="text-align: left;">Tres LED, botones y buzzer</td>
+</tr>
+<tr>
+<td style="text-align: left;">Aplicación</td>
+<td style="text-align: left;">Propuesta de visualización y monitoreo</td>
+</tr>
+<tr>
+<td style="text-align: left;">Mercado</td>
+<td style="text-align: left;">Segmento inicial de flotas medianas</td>
+</tr>
+<tr>
+<td style="text-align: left;">Modelo comercial</td>
+<td style="text-align: left;">Hardware y suscripción</td>
+</tr>
+<tr>
+<td style="text-align: left;">Lanzamiento</td>
+<td style="text-align: left;">Propuesta de valor y página web</td>
+</tr>
+<tr>
+<td style="text-align: left;">Pitch</td>
+<td style="text-align: left;">Guion estructurado</td>
+</tr>
+<tr>
+<td style="text-align: left;">Validación</td>
+<td style="text-align: left;">Identificación de funciones que requieren pruebas adicionales</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="conclusion">Conclusión</h2>
+<p>La Semana 9 permitió reunir los avances desarrollados durante el semestre y preparar la presentación final de Nervik.</p>
+<p>La integración del proyecto relaciona la PCB, el microcontrolador, la carcasa, la aplicación y el modelo de negocio.</p>
+<p>El diseño de una placa específica para la demostración permitió adaptar el hardware a las condiciones disponibles, sin abandonar la propuesta de una versión completa para vehículos de carga.</p>
+<p>También se consolidó el mensaje principal del producto: conservar información relevante cuando se interrumpe la comunicación de un vehículo.</p>
+<p>El siguiente paso será continuar con las pruebas funcionales y la validación técnica, para determinar qué tan bien cumple Nervik los objetivos definidos en su PDS.</p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="../semana8/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Semana 8">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Semana 8
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "content.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
